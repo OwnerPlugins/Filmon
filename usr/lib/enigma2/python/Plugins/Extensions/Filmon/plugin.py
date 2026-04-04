@@ -96,15 +96,14 @@ from urllib3 import disable_warnings
 from Plugins.Plugin import PluginDescriptor
 
 # Local module imports
-from . import _
+from . import _, __version__
 from .lib import Utils
 from .lib.html_conv import html_unescape
 
 # global skin_path
-CURR_VERSION = '2.4'
 PLUGIN_PATH = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('Filmon'))
 TITLE_PLUG = 'Filmon Player'
-DESC_PLUGIN = '..:: Live Filmon by Lululla %s ::.. ' % CURR_VERSION
+DESC_PLUGIN = '..:: Live Filmon by Lululla %s ::.. ' % __version__
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
 TMP_IMAGE = '/tmp/filmon/poster.png'
 aspect_manager = Utils.AspectManager()
@@ -1783,7 +1782,7 @@ class FilmonInfo(Screen):
     def showHelp(self):
         self.help_text = "\n".join([
             "Filmon Plugin",
-            "Version: " + CURR_VERSION,
+            "Version: " + __version__,
             "Created by: Lululla",
             "License: GPL-3.0-or-later",
             "",
