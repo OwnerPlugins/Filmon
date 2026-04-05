@@ -20,20 +20,6 @@ msgstr ""
 msgid "Buffering..."
 msgstr ""
 
-#: plugin.py:723
-msgid "Cancel"
-msgstr "Abbrechen"
-
-msgid "Cannot regenerate stream URL"
-msgstr ""
-
-#, fuzzy
-#| msgid "Could not get stream token"
-msgid "Cannot restore stream connection"
-msgstr "Stream-Token konnte nicht abgerufen werden"
-msgid "Buffering..."
-msgstr ""
-
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -44,6 +30,7 @@ msgstr ""
 msgid "Cannot restore stream connection"
 msgstr "Stream-Token konnte nicht abgerufen werden"
 
+#, fuzzy
 msgid "Could not get stream token"
 msgstr "Stream-Token konnte nicht abgerufen werden"
 
@@ -62,43 +49,6 @@ msgstr "Verlassen"
 msgid "Filmon Settings"
 msgstr ""
 
-msgid "Enable Token Update refresh on Player."
-msgstr ""
-
-msgid "Enable token auto-refresh"
-msgstr ""
-
-#: plugin.py:496
-msgid "Error loading channels"
-msgstr "Fehler beim Laden von Kanälen"
-
-#: plugin.py:989
-msgid "Error playing stream"
-msgstr "Fehler beim Abspielen des Streams"
-
-#: plugin.py:287
-msgid "Exit"
-msgstr "Verlassen"
-
-msgid "Filmon Settings"
-msgstr ""
-
-msgid "Maximum reconnection attempts reached"
-msgstr ""
-
-#: plugin.py:724
-msgid "OK"
-msgstr "OK"
-
-#: plugin.py:1196
-msgid "Play/pause not supported for this stream"
-msgstr "Wiedergabe/Pause wird für diesen Stream nicht unterstützt"
-
-#: plugin.py:564 plugin.py:717
-msgid "Select stream quality"
-msgstr "Streamqualität auswählen"
-
-#: plugin.py:428
 msgid "Maximum reconnection attempts reached"
 msgstr ""
 
@@ -120,16 +70,11 @@ msgstr ""
 msgid "Token refresh interval (seconds)"
 msgstr ""
 
-#: plugin.py:363
-msgid "Try again later ..."
-msgstr "Versuche es später noch einmal ..."
-
-#: plugin.py:1246 plugin.py:1319
-msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr "WILLKOMMEN BEI FILMON PLUGIN BY LULULLA"
-
 msgid "Try again later ..."
 msgstr "Versuche es später noch einmal ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
 msgstr "WILLKOMMEN BEI FILMON PLUGIN BY LULULLA"
+
+#~ msgid "Error playing stream"
+#~ msgstr "Fehler beim Abspielen des Streams"

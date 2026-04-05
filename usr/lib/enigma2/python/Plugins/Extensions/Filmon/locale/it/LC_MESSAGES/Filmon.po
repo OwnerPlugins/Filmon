@@ -17,7 +17,6 @@ msgstr ""
 msgid "Buffering..."
 msgstr ""
 
-#: plugin.py:723
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -25,12 +24,12 @@ msgid "Cannot regenerate stream URL"
 msgstr ""
 
 #, fuzzy
-#| msgid "Could not get stream token"
 msgid "Cannot restore stream connection"
 msgstr "Impossibile ottenere il token di streaming"
 
-msgid "Filmon Settings"
-msgstr ""
+#, fuzzy
+msgid "Could not get stream token"
+msgstr "Impossibile ottenere il token di streaming"
 
 msgid "Enable Token Update refresh on Player."
 msgstr ""
@@ -38,15 +37,9 @@ msgstr ""
 msgid "Enable token auto-refresh"
 msgstr ""
 
-#: plugin.py:496
 msgid "Error loading channels"
 msgstr "Errore durante il caricamento dei canali"
 
-#: plugin.py:989
-msgid "Error playing stream"
-msgstr "Errore durante la riproduzione dello streaming"
-
-#: plugin.py:287
 msgid "Exit"
 msgstr "Esci"
 
@@ -56,19 +49,15 @@ msgstr ""
 msgid "Maximum reconnection attempts reached"
 msgstr ""
 
-#: plugin.py:724
 msgid "OK"
 msgstr ""
 
-#: plugin.py:1196
 msgid "Play/pause not supported for this stream"
 msgstr "Riproduzione/pausa non supportata per questo flusso"
 
-#: plugin.py:564 plugin.py:717
 msgid "Select stream quality"
 msgstr "Seleziona la qualità dello streaming"
 
-#: plugin.py:428
 msgid "Session error, try again later ..."
 msgstr "Errore di sessione, riprova più tardi..."
 
@@ -78,11 +67,11 @@ msgstr ""
 msgid "Token refresh interval (seconds)"
 msgstr ""
 
-#: plugin.py:363
 msgid "Try again later ..."
 msgstr "Prova più tardi ..."
 
-#: plugin.py:1246 plugin.py:1319
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
 msgstr "BENVENUTI AL PLUGIN FILMON DI LULULLA"
 
+#~ msgid "Error playing stream"
+#~ msgstr "Errore durante la riproduzione dello streaming"
