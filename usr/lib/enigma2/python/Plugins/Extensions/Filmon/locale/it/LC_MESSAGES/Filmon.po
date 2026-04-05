@@ -29,9 +29,8 @@ msgstr ""
 msgid "Cannot restore stream connection"
 msgstr "Impossibile ottenere il token di streaming"
 
-#: plugin.py:604
-msgid "Could not get stream token"
-msgstr "Impossibile ottenere il token di streaming"
+msgid "Filmon Settings"
+msgstr ""
 
 msgid "Enable Token Update refresh on Player."
 msgstr ""
@@ -67,11 +66,11 @@ msgstr "Riproduzione/pausa non supportata per questo flusso"
 
 #: plugin.py:564 plugin.py:717
 msgid "Select stream quality"
-msgstr "Seleziona la qualità dello streaming"
+msgstr "Seleziona la qualitÃ  dello streaming"
 
 #: plugin.py:428
 msgid "Session error, try again later ..."
-msgstr "Errore di sessione, riprova più tardi..."
+msgstr "Errore di sessione, riprova piÃ¹ tardi..."
 
 msgid "Set Timer Refresh update Player."
 msgstr ""
@@ -81,8 +80,9 @@ msgstr ""
 
 #: plugin.py:363
 msgid "Try again later ..."
-msgstr "Prova più tardi ..."
+msgstr "Prova piÃ¹ tardi ..."
 
 #: plugin.py:1246 plugin.py:1319
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
 msgstr "BENVENUTI AL PLUGIN FILMON DI LULULLA"
+

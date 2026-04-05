@@ -31,10 +31,36 @@ msgstr ""
 #| msgid "Could not get stream token"
 msgid "Cannot restore stream connection"
 msgstr "Stream-Token konnte nicht abgerufen werden"
+msgid "Buffering..."
+msgstr ""
 
-#: plugin.py:604
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgid "Cannot regenerate stream URL"
+msgstr ""
+
+#, fuzzy
+msgid "Cannot restore stream connection"
+msgstr "Stream-Token konnte nicht abgerufen werden"
+
 msgid "Could not get stream token"
 msgstr "Stream-Token konnte nicht abgerufen werden"
+
+msgid "Enable Token Update refresh on Player."
+msgstr ""
+
+msgid "Enable token auto-refresh"
+msgstr ""
+
+msgid "Error loading channels"
+msgstr "Fehler beim Laden von Kanälen"
+
+msgid "Exit"
+msgstr "Verlassen"
+
+msgid "Filmon Settings"
+msgstr ""
 
 msgid "Enable Token Update refresh on Player."
 msgstr ""
@@ -73,6 +99,18 @@ msgid "Select stream quality"
 msgstr "Streamqualität auswählen"
 
 #: plugin.py:428
+msgid "Maximum reconnection attempts reached"
+msgstr ""
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Play/pause not supported for this stream"
+msgstr "Wiedergabe/Pause wird für diesen Stream nicht unterstützt"
+
+msgid "Select stream quality"
+msgstr "Streamqualität auswählen"
+
 msgid "Session error, try again later ..."
 msgstr "Sitzungsfehler, versuchen Sie es später noch einmal ..."
 
@@ -90,43 +128,8 @@ msgstr "Versuche es später noch einmal ..."
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
 msgstr "WILLKOMMEN BEI FILMON PLUGIN BY LULULLA"
 
-#~ msgid "Congrats! You already have the latest version..."
-#~ msgstr "Herzlichen Glückwunsch! Sie haben bereits die neueste Version..."
+msgid "Try again later ..."
+msgstr "Versuche es später noch einmal ..."
 
-#, python-format
-#~ msgid "Do you want to install update ( %s ) now?"
-#~ msgstr "Möchten Sie das Update ( %s ) jetzt installieren?"
-
-#~ msgid "For Stream Youtube coming soon!"
-#~ msgstr "Für Stream Youtube bald verfügbar!"
-
-#, python-format
-#~ msgid ""
-#~ "New version %s is available\n"
-#~ "\n"
-#~ "Changelog: %s\n"
-#~ "\n"
-#~ "Press info_long or yellow_long button to start force updating."
-#~ msgstr ""
-#~ "Neue Version %s ist verfügbar\n"
-#~ "\n"
-#~ "Changelog: %s\n"
-#~ "\n"
-#~ "Drücken Sie die Tasten info_lang oder gelb_lang, um die Aktualisierung zu erzwingen."
-
-#, python-format
-#~ msgid ""
-#~ "New version %s is available.\n"
-#~ "\n"
-#~ "Changelog: %s \n"
-#~ "\n"
-#~ "Do you want to install it now?"
-#~ msgstr ""
-#~ "Neue Version %s ist verfügbar.\n"
-#~ "\n"
-#~ "Changelog: %s\n"
-#~ "\n"
-#~ "Möchten Sie sie jetzt installieren?"
-
-#~ msgid "Update Aborted!"
-#~ msgstr "Update Abgebrochen!"
+msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
+msgstr "WILLKOMMEN BEI FILMON PLUGIN BY LULULLA"
