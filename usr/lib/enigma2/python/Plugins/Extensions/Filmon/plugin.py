@@ -1395,7 +1395,7 @@ class Playstream2(
             # GST_ERROR is typically evUser + 12
             if event == iPlayableService.evUser + 12:
                 print("GStreamer error detected, attempting to recover...")
-                # Do not call handle e_stream_error immediately, first 
+                # Do not call handle e_stream_error immediately, first
                 # check the status
                 service = self.session.nav.getCurrentService()
                 if service is None:
