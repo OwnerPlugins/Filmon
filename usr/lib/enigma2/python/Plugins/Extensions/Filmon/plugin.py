@@ -2,6 +2,64 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 
+from json import loads as json_loads
+from os import makedirs, remove
+from os.path import exists, join
+from re import compile, DOTALL, findall
+from shutil import copy
+from sys import version_info
+from time import sleep
+import random
+import codecs
+import six
+from twisted.web.client import downloadPage, getPage
+from enigma import (
+    RT_HALIGN_LEFT,
+    RT_VALIGN_CENTER,
+    eListboxPythonMultiContent,
+    ePicLoad,
+    eServiceReference,
+    eTimer,
+    getDesktop,
+    gFont,
+    iPlayableService,
+    loadPNG,
+    iServiceInformation
+)
+
+try:
+    from Components.AVSwitch import AVSwitch
+except ImportError:
+    from Components.AVSwitch import eAVControl as AVSwitch
+from Components.ActionMap import ActionMap
+from Components.config import config, ConfigSubsection, ConfigInteger, ConfigYesNo
+from Components.Label import Label
+from Components.MenuList import MenuList
+from Components.MultiContent import MultiContentEntryPixmapAlphaTest, MultiContentEntryText
+from Components.Pixmap import Pixmap
+from Components.ServiceEventTracker import InfoBarBase, ServiceEventTracker
+
+from Screens.InfoBarGenerics import (
+    InfoBarAudioSelection,
+    InfoBarMenu,
+    InfoBarNotifications,
+    InfoBarSeek,
+    InfoBarSubtitleSupport
+)
+from Screens.MessageBox import MessageBox
+from Screens.Screen import Screen
+from Screens.Setup import Setup
+
+from Tools.Directories import SCOPE_PLUGINS, resolveFilename
+
+from six.moves.urllib.request import Request, urlopen
+from urllib3.exceptions import InsecureRequestWarning
+from urllib3 import disable_warnings
+from . import _, __version__
+from .lib import Utils
+from .lib.html_conv import html_unescape
+
+
 """
 #########################################################
 #                                                       #
@@ -31,74 +89,6 @@ from __future__ import print_function
 """
 __author__ = "Lululla"
 
-from json import loads as json_loads
-from os import makedirs, remove
-from os.path import exists, join
-from re import compile, DOTALL, findall
-from shutil import copy
-from sys import version_info
-from time import sleep
-import random
-import codecs
-
-# Third-party imports
-import six
-from twisted.web.client import downloadPage, getPage
-
-# Enigma2 core imports
-from enigma import (
-    RT_HALIGN_LEFT,
-    RT_VALIGN_CENTER,
-    eListboxPythonMultiContent,
-    ePicLoad,
-    eServiceReference,
-    eTimer,
-    getDesktop,
-    gFont,
-    iPlayableService,
-    loadPNG,
-    iServiceInformation
-)
-
-# Enigma2 component imports
-try:
-    from Components.AVSwitch import AVSwitch
-except ImportError:
-    from Components.AVSwitch import eAVControl as AVSwitch
-from Components.ActionMap import ActionMap
-from Components.config import config, ConfigSubsection, ConfigInteger, ConfigYesNo
-from Components.Label import Label
-from Components.MenuList import MenuList
-from Components.MultiContent import MultiContentEntryPixmapAlphaTest, MultiContentEntryText
-from Components.Pixmap import Pixmap
-from Components.ServiceEventTracker import InfoBarBase, ServiceEventTracker
-
-# Enigma2 screen imports
-from Screens.InfoBarGenerics import (
-    InfoBarAudioSelection,
-    InfoBarMenu,
-    InfoBarNotifications,
-    InfoBarSeek,
-    InfoBarSubtitleSupport
-)
-from Screens.MessageBox import MessageBox
-from Screens.Screen import Screen
-from Screens.Setup import Setup
-
-# Enigma2 tools imports
-from Tools.Directories import SCOPE_PLUGINS, resolveFilename
-
-from six.moves.urllib.request import Request, urlopen
-from urllib3.exceptions import InsecureRequestWarning
-from urllib3 import disable_warnings
-
-# Plugin imports
-from Plugins.Plugin import PluginDescriptor
-
-# Local module imports
-from . import _, __version__
-from .lib import Utils
-from .lib.html_conv import html_unescape
 
 # global skin_path
 PLUGIN_PATH = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('Filmon'))
@@ -329,7 +319,6 @@ class filmon(Screen):
             ['OkCancelActions',
              'ColorActions',
              'DirectionActions',
-             # 'ButtonSetupActions',
              'ChannelSelectEPGActions',
              'MenuActions'],
             {
@@ -409,8 +398,6 @@ class filmon(Screen):
         page_content = data
         if PY3:
             page_content = six.ensure_str(page_content)
-
-        # print("page content =", page_content)
 
         try:
             start = page_content.find('<ul class="group-channels"', 0)
@@ -851,7 +838,6 @@ class TvInfoBarShowHide():
         self.__state = self.STATE_SHOWN
         self.__locked = 0
 
-        # Aggiungi l'help overlay come in Vavoo
         self.helpOverlay = Label("")
         self.helpOverlay.skinAttributes = [
             ("position", "0,0"),
@@ -874,7 +860,7 @@ class TvInfoBarShowHide():
                 self.doTimerHide)
         except BaseException:
             self.hideTimer.callback.append(self.doTimerHide)
-        self.hideTimer.start(3000, True)  # Ridotto a 3 secondi come in Vavoo
+        self.hideTimer.start(3000, True)
         self.onShow.append(self.__onShow)
         self.onHide.append(self.__onHide)
 
@@ -914,7 +900,7 @@ class TvInfoBarShowHide():
     def startHideTimer(self):
         if self.__state == self.STATE_SHOWN and not self.__locked:
             self.hideTimer.stop()
-            self.hideTimer.start(3000, True)  # Ridotto a 3 secondi
+            self.hideTimer.start(3000, True)
 
     def doShow(self):
         self.hideTimer.stop()
@@ -1081,7 +1067,7 @@ class Playstream2(
             self.connection_monitor_timer.callback.append(
                 self.monitor_connection)
         self.connection_monitor_timer.start(
-            30000, True)  # Controlla ogni 30 secondi
+            30000, True)
 
         self['actions'] = ActionMap(
             [
@@ -1207,7 +1193,6 @@ class Playstream2(
 
             except Exception as e:
                 print("Error in preventive refresh: " + str(e))
-                # Attempt recovery
                 self.handle_stream_error()
         else:
             print("Cannot get valid URL for refresh")
@@ -1407,17 +1392,17 @@ class Playstream2(
     def __evUser(self, event):
         """Eventi utente/errori"""
         try:
-            # GST_ERROR è tipicamente evUser + 12
+            # GST_ERROR is typically evUser + 12
             if event == iPlayableService.evUser + 12:
                 print("GStreamer error detected, attempting to recover...")
-                # Non chiamare handle_stream_error immediatamente, prima
-                # verifica lo stato
+                # Do not call handle e_stream_error immediately, first 
+                # check the status
                 service = self.session.nav.getCurrentService()
                 if service is None:
                     self.handle_stream_failure()
                 else:
-                    # Potrebbe essere un errore temporaneo, aspetta un po'
-                    # prima di agire
+                    # This could be a temporary error, so please wait a bit
+                    # before taking action.
                     self.recovery_timer = eTimer()
                     try:
                         self.recovery_timer_conn = self.recovery_timer.timeout.connect(
@@ -1435,7 +1420,7 @@ class Playstream2(
         if service is None:
             self.handle_stream_failure()
         else:
-            # Controlla se il servizio è ancora in errore
+            # Check if the service is still faulty
             ref = self.session.nav.getCurrentlyPlayingServiceReference()
             if not ref or not ref.valid():
                 self.handle_stream_failure()
@@ -1821,6 +1806,7 @@ def setup(session, **kwargs):
 
 
 def Plugins(**kwargs):
+    from Plugins.Plugin import PluginDescriptor
     icona = 'plugin.png'
 
     extDescriptor = PluginDescriptor(
