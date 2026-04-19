@@ -27,6 +27,7 @@ HEADERS = {
     "Connection": "keep-alive",
 }
 
+
 def localeInit():
     gettext.bindtextdomain(
         PluginLanguageDomain,

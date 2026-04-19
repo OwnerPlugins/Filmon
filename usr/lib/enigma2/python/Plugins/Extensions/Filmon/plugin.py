@@ -383,7 +383,8 @@ class filmon(Screen):
 
         for url, img, name in matches:
             img = img.replace('\\', '')
-            # Extract the group's numeric ID from the image URL (e.g., /groups/5/big_logo.png)
+            # Extract the group's numeric ID from the image URL (e.g.,
+            # /groups/5/big_logo.png)
             match_id = search(r'/groups/(\d+)/', img)
             if match_id:
                 group_id = match_id.group(1)   # ID numerico, es. "5"
@@ -395,7 +396,8 @@ class filmon(Screen):
 
             # We store the numeric ID (or slug) as "link"
             self.category_list.append(show_(name, group_id, img, sessionx, ''))
-            self.current_list_items = [(item[0], item[1]) for item in self.category_list]
+            self.current_list_items = [(item[0], item[1])
+                                       for item in self.category_list]
 
         self['menulist'].l.setList(self.category_list)
         self['menulist'].moveToIndex(0)
@@ -425,12 +427,15 @@ class filmon(Screen):
             self['name'].setText(_('Session error, try again later ...'))
             return
 
-        # If group_id is not numeric (e.g. slug), try to get the numeric ID via lookup API
+        # If group_id is not numeric (e.g. slug), try to get the numeric ID via
+        # lookup API
         if not group_id.isdigit():
             # We could make an extra call to resolve the slug, but it's easier to use the HTML fallback.
             # For now, if it's not numeric, we use the old parsing method (which no longer works, though).
-            # Instead, we look up the numeric ID from the group's HTML page (like we did before).
-            numeric_id = self.extract_numeric_group_id_from_url(f"http://www.filmon.com/group/{group_id}")
+            # Instead, we look up the numeric ID from the group's HTML page
+            # (like we did before).
+            numeric_id = self.extract_numeric_group_id_from_url(
+                f"http://www.filmon.com/group/{group_id}")
             if numeric_id:
                 group_id = numeric_id
             else:
@@ -462,7 +467,8 @@ class filmon(Screen):
                     img = img.replace('\\', '')
                 self.category_list.append(
                     show_(title, channel_id, img, session, description))
-                self.current_list_items = [(item[0], item[1]) for item in self.category_list]
+                self.current_list_items = [
+                    (item[0], item[1]) for item in self.category_list]
 
             self['menulist'].l.setList(self.category_list)
             self['menulist'].moveToIndex(0)
@@ -483,7 +489,10 @@ class filmon(Screen):
             req.add_header('X-Requested-With', 'XMLHttpRequest')
             page = urlopen(req, timeout=15)
             html = page.read().decode('utf-8', errors='ignore')
-            match = search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', html, IGNORECASE)
+            match = search(
+                r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
+                html,
+                IGNORECASE)
             if match:
                 image_url = match.group(1)
                 id_match = search(r'/groups/(\d+)/', image_url)
@@ -535,7 +544,8 @@ class filmon(Screen):
                 stream_url = stream.get('url', '')
                 stream_name = stream.get('name', '')
                 quality = stream.get('quality', '')
-                print(f"[DEBUG] Stream found: {stream_name} - Quality: {quality} - URL: {stream_url}")
+                print(
+                    f"[DEBUG] Stream found: {stream_name} - Quality: {quality} - URL: {stream_url}")
 
                 if '.m3u8' in stream_url:
                     clean_url = stream_url.replace('\\', '')
@@ -1331,7 +1341,8 @@ class Playstream2(
         if token:
             base_url = "http://edge{}.filmon.com/live/{}.{}.stream/playlist.m3u8?id={}"
             edge_server = random.randint(1300, 1400)
-            self.url = base_url.format(edge_server, channelID, self.preferred_quality, token)
+            self.url = base_url.format(
+                edge_server, channelID, self.preferred_quality, token)
             self.openTest(self.servicetype, self.url)
 
     def serviceStarted(self):
@@ -1564,7 +1575,9 @@ class Playstream2(
                 stream_url = stream.get("url", "")
                 if ".m3u8" in stream_url and self.preferred_quality in stream_url:
                     clean_url = stream_url.replace("\\", "")
-                    print(f"[DEBUG] URL regenerated with quality {self.preferred_quality}: {clean_url}")
+                    print(
+                        f"[DEBUG] URL regenerated with quality {
+                            self.preferred_quality}: {clean_url}")
                     if not clean_url.startswith("http"):
                         clean_url = "http://" + clean_url
                     return clean_url
@@ -1589,7 +1602,11 @@ class Playstream2(
             if token:
                 base_url = "http://edge{}.filmon.com/live/{}.{}.stream/playlist.m3u8?id={}"
                 edge_server = random.randint(1300, 1400)
-                url = base_url.format(edge_server, self.channelID, self.preferred_quality, token)
+                url = base_url.format(
+                    edge_server,
+                    self.channelID,
+                    self.preferred_quality,
+                    token)
                 return url
 
         except HTTPError as e:
