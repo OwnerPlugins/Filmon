@@ -1,80 +1,77 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Filmon\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-24 21:26+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Masta2002\n"
-"Language-Team: *\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.9\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
 
-# New strings - GitHub Action
 msgid "Buffering..."
-msgstr ""
+msgstr "Puffern..."
 
 msgid "Cancel"
 msgstr "Abbrechen"
 
+msgid "Cannot find group ID"
+msgstr "Gruppen-ID nicht gefunden"
+
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Stream-URL kann nicht neu generiert werden"
 
-#, fuzzy
 msgid "Cannot restore stream connection"
-msgstr "Stream-Token konnte nicht abgerufen werden"
+msgstr "Stream-Verbindung kann nicht wiederhergestellt werden"
 
-#, fuzzy
 msgid "Could not get stream token"
 msgstr "Stream-Token konnte nicht abgerufen werden"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Token-Aktualisierung im Player aktivieren."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Automatische Token-Aktualisierung aktivieren"
 
 msgid "Error loading channels"
-msgstr "Fehler beim Laden von Kanälen"
+msgstr "Fehler beim Laden der Kanäle"
 
 msgid "Exit"
-msgstr "Verlassen"
+msgstr "Beenden"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filmon-Einstellungen"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Maximale Anzahl von Wiederverbindungsversuchen erreicht"
+
+msgid "No channels found"
+msgstr "Keine Kanäle gefunden"
 
 msgid "OK"
 msgstr "OK"
 
 msgid "Play/pause not supported for this stream"
-msgstr "Wiedergabe/Pause wird für diesen Stream nicht unterstützt"
+msgstr "Wiedergabe/Pause für diesen Stream nicht unterstützt"
 
 msgid "Select stream quality"
-msgstr "Streamqualität auswählen"
+msgstr "Stream-Qualität auswählen"
 
 msgid "Session error, try again later ..."
-msgstr "Sitzungsfehler, versuchen Sie es später noch einmal ..."
+msgstr "Sitzungsfehler, bitte später erneut versuchen ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Timer-Intervall für Aktualisierung im Player einstellen."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Token-Aktualisierungsintervall (Sekunden)"
 
 msgid "Try again later ..."
-msgstr "Versuche es später noch einmal ..."
+msgstr "Später erneut versuchen ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr "WILLKOMMEN BEI FILMON PLUGIN BY LULULLA"
-
-#~ msgid "Error playing stream"
-#~ msgstr "Fehler beim Abspielen des Streams"
+msgstr "WILLKOMMEN BEIM FILMON-PLUGIN VON LULULLA"

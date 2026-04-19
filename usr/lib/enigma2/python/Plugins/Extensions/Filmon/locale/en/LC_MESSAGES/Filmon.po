@@ -17,6 +17,9 @@ msgstr "Buffering..."
 msgid "Cancel"
 msgstr "Cancel"
 
+msgid "Cannot find group ID"
+msgstr ""
+
 msgid "Cannot regenerate stream URL"
 msgstr "Cannot regenerate stream URL"
 
@@ -43,6 +46,9 @@ msgstr "Filmon Settings"
 
 msgid "Maximum reconnection attempts reached"
 msgstr "Maximum reconnection attempts reached"
+
+msgid "No channels found"
+msgstr ""
 
 msgid "OK"
 msgstr "OK"

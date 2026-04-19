@@ -1,13 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import print_function
 
 from json import loads as json_loads
 from os import makedirs, remove
 from os.path import exists, join
-from re import compile, DOTALL, findall
+from re import DOTALL, IGNORECASE, compile, search
 from shutil import copy
-from sys import version_info
 from time import sleep
 import random
 import codecs
@@ -55,16 +53,19 @@ from Tools.Directories import SCOPE_PLUGINS, resolveFilename
 from six.moves.urllib.request import Request, urlopen
 from urllib3.exceptions import InsecureRequestWarning
 from urllib3 import disable_warnings
+from urllib.parse import urlparse
+from urllib.error import HTTPError
+
 from . import _, __version__
 from .lib import Utils
 from .lib.html_conv import html_unescape
+from .google_translate import trans
 
 
 """
 #########################################################
 #                                                       #
 #  Filmon Plugin                                        #
-#  Version: 2.4                                         #
 #  Created by Lululla                                   #
 #  License: GPL-3.0-or-later                            #
 #  https://www.gnu.org/licenses/gpl-3.0.html            #
@@ -98,24 +99,13 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 TMP_IMAGE = '/tmp/filmon/poster.png'
 aspect_manager = Utils.AspectManager()
 disable_warnings(InsecureRequestWarning)
-PY3 = version_info[0] == 3
+
 
 config.plugins.filmon = ConfigSubsection()
 config.plugins.filmon.token_refresh = ConfigYesNo(default=True)
 config.plugins.filmon.token_refresh_interval = ConfigInteger(
     default=45, limits=(30, 300))
 
-if PY3:
-    from urllib.parse import urlparse
-    unicode = str
-else:
-    from urlparse import urlparse
-    str = unicode
-    try:
-        import ssl
-        sslContext = ssl._create_unverified_context()
-    except ImportError:
-        sslContext = None
 
 try:
     from twisted.internet import ssl
@@ -137,22 +127,11 @@ if sslverify:
 
 
 try:
-    # Python 3
-    from urllib.error import HTTPError
-except ImportError:
-    # Python 2
-    from urllib2 import HTTPError
-
-
-# Check if the directory exists, if not, create it
-if not exists('/tmp/filmon/'):
-    makedirs('/tmp/filmon/')
-else:
-    print('/tmp/filmon/ already present')
-
-try:
-    copy(join(PLUGIN_PATH, 'noposter.png'), '/tmp/filmon/poster.png')
-    copy(join(PLUGIN_PATH, 'noposter.jpg'), '/tmp/filmon/poster.jpg')
+    if not exists('/tmp/filmon/'):
+        makedirs('/tmp/filmon/')
+        copy(join(PLUGIN_PATH, 'noposter.png'), '/tmp/filmon/poster.png')
+    else:
+        print('/tmp/filmon/ already present')
 except Exception as e:
     print("Error copying files: {}".format(e))
 
@@ -179,9 +158,6 @@ elif screen_width == 1920:
     skin_path = join(PLUGIN_PATH, 'skin/skin_pli/defaultListScreen_new.xml')
 else:
     skin_path = join(PLUGIN_PATH, 'skin/skin_pli/defaultListScreen.xml')
-
-if exists('/var/lib/dpkg/status'):
-    skin_path = skin_path.replace('skin_pli', 'skin_cvs')
 
 skin_info = join(PLUGIN_PATH, 'skin/info/info.xml')
 
@@ -271,9 +247,8 @@ def get_session():
     req.add_header('Referer', 'http://www.filmon.com/')
     req.add_header('X-Requested-With', 'XMLHttpRequest')
     page = urlopen(req, None, 15)
-    content = page.read()
-    if PY3:
-        content = six.ensure_str(content)
+    contentraw = page.read()
+    content = six.ensure_str(contentraw)
     x = json_loads(content)
     session = x["session_key"]
     if session:
@@ -379,9 +354,7 @@ class filmon(Screen):
             print(e)
 
     def downxmlpage(self):
-        url = 'http://www.filmon.com/group'
-        if PY3:
-            url = b'http://www.filmon.com/group'
+        url = b'http://www.filmon.com/group'
         getPage(url).addCallback(self._gotPageLoad).addErrback(self.errorLoad)
 
     def errorLoad(self):
@@ -391,14 +364,11 @@ class filmon(Screen):
         self.selection = ''
         self.index = 'group'
         self.category_list = []
+        self.current_list_items = []
 
         global sessionx
         sessionx = get_session()
-
-        page_content = data
-        if PY3:
-            page_content = six.ensure_str(page_content)
-
+        page_content = six.ensure_str(data)
         try:
             start = page_content.find('<ul class="group-channels"', 0)
             end = page_content.find('<div id="footer">', start)
@@ -413,48 +383,61 @@ class filmon(Screen):
 
         for url, img, name in matches:
             img = img.replace('\\', '')
-            url = "http://www.filmon.com" + url
-
-            if PY3:
-                url = six.ensure_str(url)
-                img = six.ensure_str(img)
-                name = six.ensure_str(name)
+            # Extract the group's numeric ID from the image URL (e.g., /groups/5/big_logo.png)
+            match_id = search(r'/groups/(\d+)/', img)
+            if match_id:
+                group_id = match_id.group(1)   # ID numerico, es. "5"
+                print(f"[DEBUG] Gruppo: {name} -> ID: {group_id}")
             else:
-                if isinstance(url, unicode):
-                    url = url.encode('utf-8')
-                if isinstance(img, unicode):
-                    img = img.encode('utf-8')
-                if isinstance(name, unicode):
-                    name = name.encode('utf-8')
+                # fallback: use the last part of the URL (slug) if not found
+                group_id = url.split('/')[-1]
+                print(f"[DEBUG] Gruppo: {name} -> slug: {group_id}")
 
-            pic = ''
-            self.category_list.append(show_(name, url, img, sessionx, pic))
-            self.current_list_items = [(item[0], item[1])
-                                       for item in self.category_list]
+            # We store the numeric ID (or slug) as "link"
+            self.category_list.append(show_(name, group_id, img, sessionx, ''))
+            self.current_list_items = [(item[0], item[1]) for item in self.category_list]
 
         self['menulist'].l.setList(self.category_list)
         self['menulist'].moveToIndex(0)
         self['name'].setText('Select')
         self.selection = self['menulist'].getCurrent()[0][0]
         self['name'].setText(self.selection)
-
         self.load_poster()
 
-    def cat(self, url):
+    def onHlsSelected(self, selected_url, channelID, index, currentList):
+        if selected_url:
+            print(f"[DEBUG] URL selected by user: {selected_url}")
+            self.play_that_shit(
+                selected_url,
+                channelID,
+                'hls',
+                index,
+                currentList)
+
+    def load_group_channels(self, group_id):
         self.selection = ''
         self.index = 'cat'
         self.category_list = []
         self.id = ''
 
-        group_id = url.split('/')[-1]
         session = get_session()
         if not session:
             self['name'].setText(_('Session error, try again later ...'))
             return
 
-        # Try API first
-        api_url = 'https://eu-api.filmon.com/api/group/' + \
-            group_id + '?session_key=' + session
+        # If group_id is not numeric (e.g. slug), try to get the numeric ID via lookup API
+        if not group_id.isdigit():
+            # We could make an extra call to resolve the slug, but it's easier to use the HTML fallback.
+            # For now, if it's not numeric, we use the old parsing method (which no longer works, though).
+            # Instead, we look up the numeric ID from the group's HTML page (like we did before).
+            numeric_id = self.extract_numeric_group_id_from_url(f"http://www.filmon.com/group/{group_id}")
+            if numeric_id:
+                group_id = numeric_id
+            else:
+                self['name'].setText(_('Cannot find group ID'))
+                return
+
+        api_url = f'https://eu-api.filmon.com/api/group/{group_id}?session_key={session}'
         try:
             headers = {
                 'User-Agent': USER_AGENT,
@@ -462,64 +445,24 @@ class filmon(Screen):
                 'X-Requested-With': 'XMLHttpRequest'
             }
             req = Request(api_url, headers=headers)
-            response = urlopen(req)
-            content = response.read()
-            if PY3:
-                content = content.decode('utf-8')
-            data = json_loads(content)
+            response = urlopen(req, timeout=15)
+            data = json_loads(response.read().decode('utf-8'))
             channels = data.get('channels', [])
 
-            if channels:
-                for channel in channels:
-                    channel_id = channel.get('id', '')
-                    title = channel.get('title', '')
-                    description = channel.get('description', '')
-                    img = channel.get(
-                        'big_logo', '') or channel.get(
-                        'logo', '')
-                    if img:
-                        img = img.replace('\\', '')
-                    self.category_list.append(
-                        show_(
-                            title,
-                            channel_id,
-                            img,
-                            session,
-                            description))
-                    self.current_list_items = [
-                        (item[0], item[1]) for item in self.category_list]
-
-                self['menulist'].l.setList(self.category_list)
-                self['menulist'].moveToIndex(0)
-                self.selection = self['menulist'].getCurrent()[0][0]
-                self['name'].setText(str(self.selection))
-                self.load_poster()
+            if not channels:
+                self['name'].setText(_('No channels found'))
                 return
 
-        except Exception as e:
-            print("API error:", str(e))
-
-        # If API fails, fallback to HTML parsing
-        try:
-            req = Request(url)
-            req.add_header('User-Agent', USER_AGENT)
-            req.add_header('Referer', 'http://www.filmon.com/')
-            req.add_header('X-Requested-With', 'XMLHttpRequest')
-            page = urlopen(req)
-            page_content = page.read()
-            if PY3:
-                page_content = six.ensure_str(page_content)
-
-            regexvideo = r'data-channel-id="(.*?)".*?<img src="(.*?)".*?<a href=".*?">(.*?)</a>'
-            matches = findall(regexvideo, page_content, DOTALL)
-
-            for channel_id, img, title in matches:
-                img = img.replace('\\', '')
-                title = html_unescape(title)
+            for channel in channels:
+                channel_id = str(channel.get('id', ''))
+                title = channel.get('title', '')
+                description = channel.get('description', '')
+                img = channel.get('big_logo', '') or channel.get('logo', '')
+                if img:
+                    img = img.replace('\\', '')
                 self.category_list.append(
-                    show_(title, channel_id, img, session, ''))
-                self.current_list_items = [
-                    (item[0], item[1]) for item in self.category_list]
+                    show_(title, channel_id, img, session, description))
+                self.current_list_items = [(item[0], item[1]) for item in self.category_list]
 
             self['menulist'].l.setList(self.category_list)
             self['menulist'].moveToIndex(0)
@@ -528,17 +471,27 @@ class filmon(Screen):
             self.load_poster()
 
         except Exception as e:
-            print("HTML parsing error:", str(e))
+            print(f"[DEBUG] API group error: {e}")
             self['name'].setText(_('Error loading channels'))
 
-    def onHlsSelected(self, selected_url, channelID, index, currentList):
-        if selected_url:
-            self.play_that_shit(
-                selected_url,
-                channelID,
-                'hls',
-                index,
-                currentList)
+    def extract_numeric_group_id_from_url(self, url):
+        """Visits the group page and returns the numeric ID found in the og:image meta"""
+        try:
+            req = Request(url)
+            req.add_header('User-Agent', USER_AGENT)
+            req.add_header('Referer', 'http://www.filmon.com/')
+            req.add_header('X-Requested-With', 'XMLHttpRequest')
+            page = urlopen(req, timeout=15)
+            html = page.read().decode('utf-8', errors='ignore')
+            match = search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', html, IGNORECASE)
+            if match:
+                image_url = match.group(1)
+                id_match = search(r'/groups/(\d+)/', image_url)
+                if id_match:
+                    return id_match.group(1)
+        except Exception as e:
+            print(f"[DEBUG] extract_numeric_group_id error: {e}")
+        return None
 
     def ok(self):
         try:
@@ -555,13 +508,12 @@ class filmon(Screen):
                     self.get_rtmp(url, channel_id)
 
             elif self.index == 'group':
-                group_url = current_index[0][1]
-                print('Group URL:', group_url)
-                self.cat(group_url)
+                group_id = current_index[0][1]
+                print('Group ID:', group_id)
+                self.load_group_channels(group_id)
 
         except Exception as e:
             print("Error:", str(e))
-            print("Error: can't find file")
 
     def get_rtmp(self, url, channel_id):
         try:
@@ -571,10 +523,9 @@ class filmon(Screen):
                 'X-Requested-With': 'XMLHttpRequest'
             }
             req = Request(url, headers=headers)
-            response = urlopen(req, timeout=10)
-            content = response.read()
-            if PY3:
-                content = content.decode('utf-8')
+            response = urlopen(req, timeout=20)
+            contentraw = response.read()
+            content = contentraw.decode('utf-8')
             data = json_loads(content)
 
             hls_streams = []
@@ -584,6 +535,7 @@ class filmon(Screen):
                 stream_url = stream.get('url', '')
                 stream_name = stream.get('name', '')
                 quality = stream.get('quality', '')
+                print(f"[DEBUG] Stream found: {stream_name} - Quality: {quality} - URL: {stream_url}")
 
                 if '.m3u8' in stream_url:
                     clean_url = stream_url.replace('\\', '')
@@ -622,7 +574,6 @@ class filmon(Screen):
 
     def fallback_hls(self, channel_id, streams):
         token = None
-
         # Extract token from the first URL that contains 'id='
         for stream in streams:
             url = stream.get('url', '')
@@ -670,8 +621,8 @@ class filmon(Screen):
         self.channelID = channel_id
         self.current_channel_url = url
         self.current_stream_url = url
-        print("HLS URL player:", str(url))
-
+        print(f"[DEBUG] URL which will be passed to the player: {url}")
+        print(f"[DEBUG] Channel ID: {channel_id} - Stream type: {stream_type}")
         self.session.open(
             Playstream2,
             name,
@@ -690,8 +641,6 @@ class filmon(Screen):
             self.downxmlpage()
 
     def load_poster(self):
-        global TMP_IMAGE
-
         current_item = self['menulist'].getCurrent()
         if not current_item:
             return
@@ -699,23 +648,20 @@ class filmon(Screen):
         # Set description if in category view
         if self.index == 'cat':
             description = current_item[0][4]
-            print('Description:', description)
-            self['text'].setText(description)
+            # Translate title and explanation
+            translated_explanation = trans(description)
+            self['text'].setText(translated_explanation)
         else:
             self['text'].setText('')
 
         pixmap_url = current_item[0][2]
-        TMP_IMAGE = '/tmp/filmon/poster.png'
-
         if pixmap_url and pixmap_url.lower() not in ("", "n/a", "null"):
             if 'http' not in pixmap_url:
                 self.poster_resize(TMP_IMAGE)
                 return
             else:
                 try:
-                    if PY3:
-                        pixmap_url = six.ensure_binary(pixmap_url)
-
+                    pixmap_url = six.ensure_binary(pixmap_url)
                     if pixmap_url.startswith(b"https") and sslverify:
                         parsed_uri = urlparse(pixmap_url)
                         domain = parsed_uri.hostname
@@ -866,7 +812,7 @@ class TvInfoBarShowHide():
 
     def show_help_overlay(self):
         help_text = (
-            "OK = Info | CH+/CH- = PREV/NEXT CHANNEL | PLAY/PAUSE = Toggle | STOP = Stop | EXIT = Exit"
+            "OK = Info | CH+/CH- = PREV/NEXT CHANNEL | PLAY/PAUSE = Toggle | STOP = Stop | EXIT = Exit | by Lululla"
         )
         self["helpOverlay"].setText(help_text)
         self["helpOverlay"].show()
@@ -978,7 +924,8 @@ class Playstream2(
             currentList):
 
         Screen.__init__(self, session)
-
+        print(f"[DEBUG] Playstream2 - URL received: {url}")
+        print(f"[DEBUG] Playstream2 - Channel Name: {name}")
         self.session = session
         self.skinName = 'MoviePlayer'
 
@@ -1008,6 +955,11 @@ class Playstream2(
         self.token_refresh_enabled = config.plugins.filmon.token_refresh.value
         self.refresh_interval = config.plugins.filmon.token_refresh_interval.value * 1000
         self.service_check_interval = 5000
+
+        self.preferred_quality = self._extract_quality_from_url(url)
+        if not self.preferred_quality:
+            self.preferred_quality = 'high'   # default
+        print("Preferred quality:", self.preferred_quality)
 
         for base in [
             InfoBarMenu, InfoBarNotifications, InfoBarBase,
@@ -1104,6 +1056,15 @@ class Playstream2(
         self.log_service_events()
         self.openTest(self.servicetype, url)
         self.onClose.append(self.cancel)
+
+    def _extract_quality_from_url(self, url):
+        """Restituisce 'high' o 'low' se presente nell'URL, altrimenti None."""
+        if not url:
+            return None
+        match = search(r'\.(high|low)\.stream', url)
+        if match:
+            return match.group(1)
+        return None
 
     def log_service_events(self):
         """Log all service events for debugging"""
@@ -1326,31 +1287,40 @@ class Playstream2(
             }
             req = Request(data, headers=headers)
             response = urlopen(req, timeout=10)
-            content = response.read()
-            if PY3:
-                content = content.decode("utf-8")
+            contentraw = response.read()
+            content = contentraw.decode("utf-8")
             json_data = json_loads(content)
 
-            hls_urls = []
             streams = json_data.get("streams", [])
-            """
-            # for stream in streams:
-                # url = stream.get("url", "")
-                # if ".m3u8" in url:
-                    # hls_url = url.replace("\\", "")
-                    # hls_urls.append({"url": hls_url})
-            """
-            if hls_urls:
-                self.url = hls_urls[0]["url"]
+
+            # Search for HLS streams with your preferred quality
+            selected_url = None
+            for stream in streams:
+                stream_url = stream.get("url", "")
+                if ".m3u8" in stream_url and self.preferred_quality in stream_url:
+                    selected_url = stream_url.replace("\\", "")
+                    break
+
+            # If not found, take the first available HLS
+            if not selected_url:
+                for stream in streams:
+                    stream_url = stream.get("url", "")
+                    if ".m3u8" in stream_url:
+                        selected_url = stream_url.replace("\\", "")
+                        break
+
+            if selected_url:
+                self.url = selected_url
                 self.current_stream_url = self.url
                 self.openTest(self.servicetype, self.url)
             else:
+                # Fallback to manual construction
                 self.fallback_hls_update(channelID, streams)
+
         except Exception as ex:
             print("Error updating stream:", ex)
 
     def fallback_hls_update(self, channelID, streams):
-        # Similar to the fallback_hls method but for updating
         token = None
         for stream in streams:
             url = stream.get('url', '')
@@ -1361,7 +1331,7 @@ class Playstream2(
         if token:
             base_url = "http://edge{}.filmon.com/live/{}.{}.stream/playlist.m3u8?id={}"
             edge_server = random.randint(1300, 1400)
-            self.url = base_url.format(edge_server, channelID, 'high', token)
+            self.url = base_url.format(edge_server, channelID, self.preferred_quality, token)
             self.openTest(self.servicetype, self.url)
 
     def serviceStarted(self):
@@ -1583,24 +1553,32 @@ class Playstream2(
 
             req = Request(api_url, headers=headers)
             response = urlopen(req, timeout=10)
-            content = response.read()
-            if PY3:
-                content = content.decode("utf-8")
+            contentraw = response.read()
+            content = contentraw.decode("utf-8")
 
             data = json_loads(content)
             streams = data.get("streams", [])
 
-            # Look for a valid HLS stream first
+            # First find the HLS stream with your preferred quality
             for stream in streams:
                 stream_url = stream.get("url", "")
-                if ".m3u8" in stream_url and "id=" in stream_url:
+                if ".m3u8" in stream_url and self.preferred_quality in stream_url:
                     clean_url = stream_url.replace("\\", "")
-                    # Ensure the URL is complete
+                    print(f"[DEBUG] URL regenerated with quality {self.preferred_quality}: {clean_url}")
                     if not clean_url.startswith("http"):
                         clean_url = "http://" + clean_url
                     return clean_url
 
-            # Fallback to manual URL construction
+            # If not found, search for any HLS with id=
+            for stream in streams:
+                stream_url = stream.get("url", "")
+                if ".m3u8" in stream_url and "id=" in stream_url:
+                    clean_url = stream_url.replace("\\", "")
+                    if not clean_url.startswith("http"):
+                        clean_url = "http://" + clean_url
+                    return clean_url
+
+            # Fallback to manual construction with preferred quality
             token = None
             for stream in streams:
                 url = stream.get("url", "")
@@ -1611,8 +1589,7 @@ class Playstream2(
             if token:
                 base_url = "http://edge{}.filmon.com/live/{}.{}.stream/playlist.m3u8?id={}"
                 edge_server = random.randint(1300, 1400)
-                url = base_url.format(
-                    edge_server, self.channelID, "high", token)
+                url = base_url.format(edge_server, self.channelID, self.preferred_quality, token)
                 return url
 
         except HTTPError as e:
@@ -1759,7 +1736,8 @@ class FilmonInfo(Screen):
             self.scroll_pos = 0
 
         display_text = '\n'.join(lines[self.scroll_pos:self.scroll_pos + 20])
-        self['text'].setText(display_text)
+        translated_explanation = trans(display_text)
+        self['text'].setText(translated_explanation)
 
     def finishLayout(self):
         self.showHelp()

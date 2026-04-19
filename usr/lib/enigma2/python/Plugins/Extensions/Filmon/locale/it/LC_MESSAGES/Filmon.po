@@ -7,35 +7,35 @@ msgstr ""
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.9\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
 
-# New strings - GitHub Action
 msgid "Buffering..."
-msgstr ""
+msgstr "Caricamento in corso..."
 
 msgid "Cancel"
 msgstr "Annulla"
 
+msgid "Cannot find group ID"
+msgstr "Impossibile trovare l'ID del gruppo"
+
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Impossibile rigenerare l'URL dello stream"
 
-#, fuzzy
 msgid "Cannot restore stream connection"
-msgstr "Impossibile ottenere il token di streaming"
+msgstr "Impossibile ripristinare la connessione stream"
 
-#, fuzzy
 msgid "Could not get stream token"
-msgstr "Impossibile ottenere il token di streaming"
+msgstr "Impossibile ottenere il token dello stream"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Abilita l'aggiornamento automatico del token sul player."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Abilita il refresh automatico del token"
 
 msgid "Error loading channels"
 msgstr "Errore durante il caricamento dei canali"
@@ -44,13 +44,16 @@ msgid "Exit"
 msgstr "Esci"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Impostazioni Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Numero massimo di tentativi di riconnessione raggiunto"
+
+msgid "No channels found"
+msgstr "Nessun canale trovato"
 
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 msgid "Play/pause not supported for this stream"
 msgstr "Riproduzione/pausa non supportata per questo flusso"
@@ -62,16 +65,13 @@ msgid "Session error, try again later ..."
 msgstr "Errore di sessione, riprova più tardi..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Imposta l'intervallo di refresh del timer sul player."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Intervallo di refresh del token (secondi)"
 
 msgid "Try again later ..."
 msgstr "Prova più tardi ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
 msgstr "BENVENUTI AL PLUGIN FILMON DI LULULLA"
-
-#~ msgid "Error playing stream"
-#~ msgstr "Errore durante la riproduzione dello streaming"

@@ -228,22 +228,54 @@ class AspectManager:
     """Manages aspect ratio settings for the plugin"""
 
     def __init__(self):
-        self.init_aspect = self.get_current_aspect()
-        print("[INFO] Initial aspect ratio:", self.init_aspect)
+        try:
+            self.init_aspect = self.get_current_aspect()
+            print("[INFO] Initial aspect ratio:", self.init_aspect)
+        except Exception as e:
+            print("[ERROR] Failed to initialize aspect manager:", str(e))
+            self.init_aspect = 0  # Fallback
 
     def get_current_aspect(self):
         """Get current aspect ratio setting"""
         try:
-            return int(AVSwitch().getAspectRatioSetting())
-        except Exception as e:
+            aspect = AVSwitch().getAspectRatioSetting()
+            # Assicurati che sia un intero valido
+            return int(aspect) if aspect is not None else 0
+        except (ValueError, TypeError, Exception) as e:
             print("[ERROR] Failed to get aspect ratio:", str(e))
-            return 0
+            return 0  # Default 4:3
+
+    def set_aspect(self, aspect_ratio):
+        """Set aspect ratio based on string (e.g., '16:9', '4:3')"""
+        try:
+            aspect_map = {
+                "4:3": 0,
+                "16:9": 1,
+                "16:10": 2,
+                "auto": 3
+            }
+
+            if aspect_ratio in aspect_map:
+                new_aspect = aspect_map[aspect_ratio]
+                print("[INFO] Setting aspect ratio to:", aspect_ratio, "(", new_aspect, ")")
+                AVSwitch().setAspectRatio(new_aspect)
+                return True
+            else:
+                print("[ERROR] Unknown aspect ratio:", aspect_ratio)
+                return False
+
+        except Exception as e:
+            print("[ERROR] Failed to set aspect ratio:", str(e))
+            return False
 
     def restore_aspect(self):
         """Restore original aspect ratio"""
         try:
-            print("[INFO] Restoring aspect ratio to:", self.init_aspect)
-            AVSwitch().setAspectRatio(self.init_aspect)
+            if hasattr(self, 'init_aspect') and self.init_aspect is not None:
+                print("[INFO] Restoring aspect ratio to:", self.init_aspect)
+                AVSwitch().setAspectRatio(self.init_aspect)
+            else:
+                print("[WARNING] No initial aspect ratio to restore")
         except Exception as e:
             print("[ERROR] Failed to restore aspect ratio:", str(e))
 
@@ -257,24 +289,29 @@ def getDesktopSize():
     return (s.width(), s.height())
 
 
-# Chaneg code for support of wqhd detection
+def isWQHD():
+    """2560 x 1440 (WQHD)"""
+    width, height = getDesktopSize()
+    return width == 2560 and height == 1440
+
+
 def isUHD():
-    UHD = False
-    if screenwidth.width() == 2560:
-        UHD = True
-        return UHD
+    """3840 x 2160 (4K UHD)"""
+    width, height = getDesktopSize()
+    return width == 3840 and height == 2160
 
 
 def isFHD():
-    if screenwidth.width() == 1920:
-        FHD = True
-        return FHD
+    """1920 x 1080 (Full HD)"""
+    width, height = getDesktopSize()
+    return width == 1920 and height == 1080
 
 
 def isHD():
-    if screenwidth.width() == 1280:
-        HD = True
-        return HD
+    """1280 x 720 (HD)"""
+    width, height = getDesktopSize()
+    return width == 1280 and height == 720
+
 # End of code change
 
 
@@ -532,7 +569,6 @@ def getLanguage():
 
 def downloadFile(url, target):
     import socket
-    response = None
     try:
         from urllib.error import HTTPError, URLError
     except BaseException:
@@ -561,7 +597,6 @@ def downloadFile(url, target):
 
 def downloadFilest(url, target):
     try:
-        response = None
         req = Request(url)
         req.add_header(
             'User-Agent',
@@ -585,8 +620,7 @@ def defaultMoviePath():
     result = config.usage.default_path.value
     if not isdir(result):
         from Tools import Directories
-        return Directories.defaultRecordingLocation(
-            config.usage.default_path.value)
+        return Directories.defaultRecordingLocation(config.usage.default_path.value)
     return result
 
 
@@ -599,8 +633,7 @@ if not isdir(config.movielist.last_videodir.value):
 downloadm3u = config.movielist.last_videodir.value
 
 
-# this def returns the current playing service name and stream_url from
-# give sref
+# this def returns the current playing service name and stream_url from give sref
 def getserviceinfo(service_ref):
     """Get service name and URL from service reference"""
     try:
@@ -671,7 +704,6 @@ def checkInternet():
 
 def check(url):
     import socket
-    response = None
     try:
         from urllib.error import HTTPError, URLError
     except BaseException:
@@ -1092,7 +1124,6 @@ def RequestAgent():
 
 
 def make_request(url):
-    response = None
     try:
         link = url
         import requests
@@ -1240,11 +1271,7 @@ def getUrlSiVer(url, verify=True):
     """Fetch URL content with optional SSL verification"""
     try:
         headers = {'User-Agent': RequestAgent()}
-        response = requests.get(
-            url,
-            headers=headers,
-            timeout=10,
-            verify=verify)
+        response = requests.get(url, headers=headers, timeout=10, verify=verify)
         response.raise_for_status()
         return response.text
     except Exception as e:
@@ -1255,11 +1282,7 @@ def getUrlSiVer(url, verify=True):
 def getUrlNoVer(url, verify=True):
     try:
         headers = {'User-Agent': RequestAgent()}
-        response = requests.get(
-            url,
-            headers=headers,
-            timeout=10,
-            verify=verify)
+        response = requests.get(url, headers=headers, timeout=10, verify=verify)
         response.raise_for_status()
         return response.text
     except Exception as e:
@@ -1268,7 +1291,6 @@ def getUrlNoVer(url, verify=True):
 
 
 def getUrl(url):
-    response = None
     req = Request(url)
     req.add_header('User-Agent', RequestAgent())
     link = url
@@ -1300,7 +1322,6 @@ def getUrl(url):
 
 
 def getUrl2(url, referer):
-    response = None
     link = url
     req = Request(url)
     req.add_header('User-Agent', RequestAgent())
@@ -1319,7 +1340,6 @@ def getUrl2(url, referer):
 
 
 def getUrlresp(url):
-    response = None
     req = Request(url)
     req.add_header('User-Agent', RequestAgent())
     try:
@@ -1701,346 +1721,28 @@ def remove_line(filename, pattern):
 def badcar(name):
     name = name
     bad_chars = [
-        "sd",
-        "hd",
-        "fhd",
-        "uhd",
-        "4k",
-        "1080p",
-        "720p",
-        "blueray",
-        "x264",
-        "aac",
-        "ozlem",
-        "hindi",
-        "hdrip",
-        "(cache)",
-        "(kids)",
-        "[3d-en]",
-        "[iran-dubbed]",
-        "imdb",
-        "top250",
-        "multi-audio",
-        "multi-subs",
-        "multi-sub",
-        "[audio-pt]",
-        "[nordic-subbed]",
-        "[nordic-subbeb]",
-        "SD",
-        "HD",
-        "FHD",
-        "UHD",
-        "4K",
-        "1080P",
-        "720P",
-        "BLUERAY",
-        "X264",
-        "AAC",
-        "OZLEM",
-        "HINDI",
-        "HDRIP",
-        "(CACHE)",
-        "(KIDS)",
-        "[3D-EN]",
-        "[IRAN-DUBBED]",
-        "IMDB",
-        "TOP250",
-        "MULTI-AUDIO",
-        "MULTI-SUBS",
-        "MULTI-SUB",
-        "[AUDIO-PT]",
-        "[NORDIC-SUBBED]",
-        "[NORDIC-SUBBEB]",
-        "-ae-",
-        "-al-",
-        "-ar-",
-        "-at-",
-        "-ba-",
-        "-be-",
-        "-bg-",
-        "-br-",
-        "-cg-",
-        "-ch-",
-        "-cz-",
-        "-da-",
-        "-de-",
-        "-dk-",
-        "-ee-",
-        "-en-",
-        "-es-",
-        "-ex-yu-",
-        "-fi-",
-        "-fr-",
-        "-gr-",
-        "-hr-",
-        "-hu-",
-        "-in-",
-        "-ir-",
-        "-it-",
-        "-lt-",
-        "-mk-",
-        "-mx-",
-        "-nl-",
-        "-no-",
-        "-pl-",
-        "-pt-",
-        "-ro-",
-        "-rs-",
-        "-ru-",
-        "-se-",
-        "-si-",
-        "-sk-",
-        "-tr-",
-        "-uk-",
-        "-us-",
-        "-yu-",
-        "-AE-",
-        "-AL-",
-        "-AR-",
-        "-AT-",
-        "-BA-",
-        "-BE-",
-        "-BG-",
-        "-BR-",
-        "-CG-",
-        "-CH-",
-        "-CZ-",
-        "-DA-",
-        "-DE-",
-        "-DK-",
-        "-EE-",
-        "-EN-",
-        "-ES-",
-        "-EX-YU-",
-        "-FI-",
-        "-FR-",
-        "-GR-",
-        "-HR-",
-        "-HU-",
-        "-IN-",
-        "-IR-",
-        "-IT-",
-        "-LT-",
-        "-MK-",
-        "-MX-",
-        "-NL-",
-        "-NO-",
-        "-PL-",
-        "-PT-",
-        "-RO-",
-        "-RS-",
-        "-RU-",
-        "-SE-",
-        "-SI-",
-        "-SK-",
-        "-TR-",
-        "-UK-",
-        "-US-",
-        "-YU-",
-        "|ae|",
-        "|al|",
-        "|ar|",
-        "|at|",
-        "|ba|",
-        "|be|",
-        "|bg|",
-        "|br|",
-        "|cg|",
-        "|ch|",
-        "|cz|",
-        "|da|",
-        "|de|",
-        "|dk|",
-        "|ee|",
-        "|en|",
-        "|es|",
-        "|ex-yu|",
-        "|fi|",
-        "|fr|",
-        "|gr|",
-        "|hr|",
-        "|hu|",
-        "|in|",
-        "|ir|",
-        "|it|",
-        "|lt|",
-        "|mk|",
-        "|mx|",
-        "|nl|",
-        "|no|",
-        "|pl|",
-        "|pt|",
-        "|ro|",
-        "|rs|",
-        "|ru|",
-        "|se|",
-        "|si|",
-        "|sk|",
-        "|tr|",
-        "|uk|",
-        "|us|",
-        "|yu|",
-        "|AE|",
-        "|AL|",
-        "|AR|",
-        "|AT|",
-        "|BA|",
-        "|BE|",
-        "|BG|",
-        "|BR|",
-        "|CG|",
-        "|CH|",
-        "|CZ|",
-        "|DA|",
-        "|DE|",
-        "|DK|",
-        "|EE|",
-        "|EN|",
-        "|ES|",
-        "|EX-YU|",
-        "|FI|",
-        "|FR|",
-        "|GR|",
-        "|HR|",
-        "|HU|",
-        "|IN|",
-        "|IR|",
-        "|IT|",
-        "|LT|",
-        "|MK|",
-        "|MX|",
-        "|NL|",
-        "|NO|",
-        "|PL|",
-        "|PT|",
-        "|RO|",
-        "|RS|",
-        "|RU|",
-        "|SE|",
-        "|SI|",
-        "|SK|",
-        "|TR|",
-        "|UK|",
-        "|US|",
-        "|YU|",
-        "|Ae|",
-        "|Al|",
-        "|Ar|",
-        "|At|",
-        "|Ba|",
-        "|Be|",
-        "|Bg|",
-        "|Br|",
-        "|Cg|",
-        "|Ch|",
-        "|Cz|",
-        "|Da|",
-        "|De|",
-        "|Dk|",
-        "|Ee|",
-        "|En|",
-        "|Es|",
-        "|Ex-Yu|",
-        "|Fi|",
-        "|Fr|",
-        "|Gr|",
-        "|Hr|",
-        "|Hu|",
-        "|In|",
-        "|Ir|",
-        "|It|",
-        "|Lt|",
-        "|Mk|",
-        "|Mx|",
-        "|Nl|",
-        "|No|",
-        "|Pl|",
-        "|Pt|",
-        "|Ro|",
-        "|Rs|",
-        "|Ru|",
-        "|Se|",
-        "|Si|",
-        "|Sk|",
-        "|Tr|",
-        "|Uk|",
-        "|Us|",
-        "|Yu|",
-        "(",
-        ")",
-        "[",
-        "]",
-        "u-",
-        "3d",
-        "'",
-        "#",
-        "/",
-        "-",
-        "_",
-        ".",
-        "+",
-        "PF1",
-        "PF2",
-        "PF3",
-        "PF4",
-        "PF5",
-        "PF6",
-        "PF7",
-        "PF8",
-        "PF9",
-        "PF10",
-        "PF11",
-        "PF12",
-        "PF13",
-        "PF14",
-        "PF15",
-        "PF16",
-        "PF17",
-        "PF18",
-        "PF19",
-        "PF20",
-        "PF21",
-        "PF22",
-        "PF23",
-        "PF24",
-        "PF25",
-        "PF26",
-        "PF27",
-        "PF28",
-        "PF29",
-        "PF30",
-        "480p",
-        "ANIMAZIONE",
-        "AVVENTURA",
-        "BIOGRAFICO",
-        "BDRip",
-        "BluRay",
-        "CINEMA",
-        "COMMEDIA",
-        "DOCUMENTARIO",
-        "DRAMMATICO",
-        "FANTASCIENZA",
-        "FANTASY",
-        "HDCAM",
-        "HDTC",
-        "HDTS",
-        "LD",
-        "MARVEL",
-        "MD",
-        "NEW_AUDIO",
-        "R3",
-        "R6",
-        "SENTIMENTALE",
-        "TC",
-        "TELECINE",
-        "TELESYNC",
-        "THRILLER",
-        "Uncensored",
-        "V2",
-        "WEBDL",
-        "WEBRip",
-        "WEB",
-        "WESTERN"]
+        "sd", "hd", "fhd", "uhd", "4k", "1080p", "720p", "blueray", "x264", "aac", "ozlem", "hindi", "hdrip", "(cache)", "(kids)", "[3d-en]", "[iran-dubbed]", "imdb", "top250", "multi-audio",
+        "multi-subs", "multi-sub", "[audio-pt]", "[nordic-subbed]", "[nordic-subbeb]",
+        "SD", "HD", "FHD", "UHD", "4K", "1080P", "720P", "BLUERAY", "X264", "AAC", "OZLEM", "HINDI", "HDRIP", "(CACHE)", "(KIDS)", "[3D-EN]", "[IRAN-DUBBED]", "IMDB", "TOP250", "MULTI-AUDIO",
+        "MULTI-SUBS", "MULTI-SUB", "[AUDIO-PT]", "[NORDIC-SUBBED]", "[NORDIC-SUBBEB]",
+        "-ae-", "-al-", "-ar-", "-at-", "-ba-", "-be-", "-bg-", "-br-", "-cg-", "-ch-", "-cz-", "-da-", "-de-", "-dk-", "-ee-", "-en-", "-es-", "-ex-yu-", "-fi-", "-fr-", "-gr-", "-hr-", "-hu-",
+        "-in-", "-ir-", "-it-", "-lt-", "-mk-", "-mx-", "-nl-", "-no-", "-pl-", "-pt-", "-ro-", "-rs-", "-ru-", "-se-", "-si-", "-sk-", "-tr-", "-uk-", "-us-", "-yu-",
+        "-AE-", "-AL-", "-AR-", "-AT-", "-BA-", "-BE-", "-BG-", "-BR-", "-CG-", "-CH-", "-CZ-", "-DA-", "-DE-", "-DK-", "-EE-", "-EN-", "-ES-", "-EX-YU-", "-FI-", "-FR-", "-GR-", "-HR-", "-HU-",
+        "-IN-", "-IR-", "-IT-", "-LT-", "-MK-", "-MX-", "-NL-", "-NO-", "-PL-", "-PT-", "-RO-", "-RS-", "-RU-", "-SE-", "-SI-", "-SK-", "-TR-", "-UK-", "-US-", "-YU-",
+        "|ae|", "|al|", "|ar|", "|at|", "|ba|", "|be|", "|bg|", "|br|", "|cg|", "|ch|", "|cz|", "|da|", "|de|", "|dk|", "|ee|", "|en|", "|es|", "|ex-yu|", "|fi|", "|fr|", "|gr|", "|hr|", "|hu|",
+        "|in|", "|ir|", "|it|", "|lt|", "|mk|", "|mx|", "|nl|", "|no|", "|pl|", "|pt|", "|ro|", "|rs|", "|ru|", "|se|", "|si|", "|sk|", "|tr|", "|uk|", "|us|", "|yu|",
+        "|AE|", "|AL|", "|AR|", "|AT|", "|BA|", "|BE|", "|BG|", "|BR|", "|CG|", "|CH|", "|CZ|", "|DA|", "|DE|", "|DK|", "|EE|", "|EN|", "|ES|", "|EX-YU|", "|FI|", "|FR|", "|GR|", "|HR|", "|HU|",
+        "|IN|", "|IR|", "|IT|", "|LT|", "|MK|", "|MX|", "|NL|", "|NO|", "|PL|", "|PT|", "|RO|", "|RS|", "|RU|", "|SE|", "|SI|", "|SK|", "|TR|", "|UK|", "|US|", "|YU|",
+        "|Ae|", "|Al|", "|Ar|", "|At|", "|Ba|", "|Be|", "|Bg|", "|Br|", "|Cg|", "|Ch|", "|Cz|", "|Da|", "|De|", "|Dk|", "|Ee|", "|En|", "|Es|", "|Ex-Yu|", "|Fi|", "|Fr|", "|Gr|", "|Hr|", "|Hu|",
+        "|In|", "|Ir|", "|It|", "|Lt|", "|Mk|", "|Mx|", "|Nl|", "|No|", "|Pl|", "|Pt|", "|Ro|", "|Rs|", "|Ru|", "|Se|", "|Si|", "|Sk|", "|Tr|", "|Uk|", "|Us|", "|Yu|",
+        "(", ")", "[", "]", "u-", "3d", "'", "#", "/", "-", "_", ".", "+",
+        "PF1", "PF2", "PF3", "PF4", "PF5", "PF6", "PF7", "PF8", "PF9", "PF10", "PF11", "PF12", "PF13", "PF14", "PF15", "PF16", "PF17", "PF18", "PF19", "PF20",
+        "PF21", "PF22", "PF23", "PF24", "PF25", "PF26", "PF27", "PF28", "PF29", "PF30",
+        "480p", "ANIMAZIONE", "AVVENTURA", "BIOGRAFICO", "BDRip", "BluRay", "CINEMA", "COMMEDIA",
+        "DOCUMENTARIO", "DRAMMATICO", "FANTASCIENZA", "FANTASY", "HDCAM", "HDTC", "HDTS", "LD",
+        "MARVEL", "MD", "NEW_AUDIO", "R3", "R6", "SENTIMENTALE", "TC", "TELECINE", "TELESYNC",
+        "THRILLER", "Uncensored", "V2", "WEBDL", "WEBRip", "WEB", "WESTERN"
+    ]
 
     for j in range(1900, 2025):
         bad_chars.append(str(j))
