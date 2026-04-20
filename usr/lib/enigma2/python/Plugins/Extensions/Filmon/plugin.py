@@ -175,7 +175,7 @@ class m2list(MenuList):
             self.l.setItemHeight(60)
             self.l.setFont(0, gFont('Regular', 30))
         else:
-            self.l.setItemHeight(35)
+            self.l.setItemHeight(40)
             self.l.setFont(0, gFont('Regular', 24))
 
 
@@ -191,8 +191,8 @@ def show_(name, link, img, session, description):
         icon_pos, icon_size = (5, 5), (50, 50)
         text_pos, text_size = (90, 0), (1000, 50)
     else:
-        icon_pos, icon_size = (3, 3), (40, 40)
-        text_pos, text_size = (70, 0), (500, 50)
+        icon_pos, icon_size = (3, 2), (30, 30)
+        text_pos, text_size = (70, 5), (500, 30)
 
     res.append(
         MultiContentEntryPixmapAlphaTest(
