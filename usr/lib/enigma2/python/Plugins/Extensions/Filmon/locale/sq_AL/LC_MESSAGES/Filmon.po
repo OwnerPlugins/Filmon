@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Buferimi..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Anulo"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "ID-ja e grupit nuk mund të gjendet"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "URL-ja e transmetimit nuk mund të rigjenerohet"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Lidhja e transmetimit nuk mund të rivendoset"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Shenja e transmetimit nuk mund të merrej"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Aktivizo rifreskimin e Përditësimit të Tokenit në Player."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Aktivizo rifreskimin automatik të tokenit"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Gabim gjatë ngarkimit të kanaleve"
 
 msgid "Exit"
-msgstr ""
+msgstr "Dilni"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Cilësimet e Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "U arritën përpjekjet maksimale për rilidhje"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Nuk u gjet asnjë kanal"
 
 msgid "OK"
 msgstr ""
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Luajtja/ndërprerja nuk mbështetet për këtë transmetim"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Zgjidhni cilësinë e transmetimit"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Gabim në seancë, provo sërish më vonë..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Cakto rifreskimin e kohëmatësit të përditësimit të luajtësit."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Intervali i rifreskimit të tokenit (sekonda)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Provo sërish më vonë..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "MIRË SE VINI NË PLUGIN FILMON BY LULULLA"

@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Buffer..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Kanselleer"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Kan nie groep-ID vind nie"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Kan nie stroom-URL hergenereer nie"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Kan nie stroomverbinding herstel nie"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Kon nie stroomtoken kry nie"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Aktiveer Token Update-verversing op Player."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Aktiveer token outo-herlaai"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Kon nie kanale laai nie"
 
 msgid "Exit"
-msgstr ""
+msgstr "Verlaat"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filminstellings"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Maksimum herkoppelingpogings bereik"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Geen kanale gevind nie"
 
 msgid "OK"
 msgstr ""
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Speel/onderbreek word nie vir hierdie stroom gesteun nie"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Kies stroomkwaliteit"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Sessiefout, probeer later weer ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Stel Timer Refresh Update Player."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Tekenverversingsinterval (sekondes)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Probeer later weer..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "WELKOM BY FILMON PLUGIN DEUR LULULLA"

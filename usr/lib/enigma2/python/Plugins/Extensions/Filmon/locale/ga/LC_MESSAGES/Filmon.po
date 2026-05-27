@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Ag maolánú..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cealaigh"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Ní féidir aitheantas grúpa a aimsiú"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Ní féidir URL an tsrutha a athghiniúint"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Ní féidir an nasc srutha a chur ar ais"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Níorbh fhéidir comhartha an tsrutha a fháil"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Cumasaigh Token Update athnuachan ar Player."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Cumasaigh uath-athnuachan comharthaí"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Earráid agus cainéil á lódáil"
 
 msgid "Exit"
-msgstr ""
+msgstr "Scoir"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Socruithe Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Rinneadh uasiarrachtaí athcheangail"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Níor aimsíodh aon chainéil"
 
 msgid "OK"
-msgstr ""
+msgstr "ceart go leor"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Ní thacaítear le súgradh/sos don sruth seo"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Roghnaigh cáilíocht sruth"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Earráid seisiúin, bain triail eile as ar ball..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Socraigh an t-imreoir nuashonraithe an t-amadóir."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Eatramh athnuachana comhartha (soicindí)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Bain triail eile as ar ball..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "FÁILTE CHUIG AN BHREISEÁN SCANNÁN Ó LULULLA"

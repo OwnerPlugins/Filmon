@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Буферӣ..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Бекор кардан"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "ID-и гурӯҳ ёфт нашуд"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "URL-и ҷараёнро барқарор кардан мумкин нест"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Пайвасти ҷараёнро барқарор кардан мумкин нест"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Токени ҷараёнро гирифта натавонист"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Дар Player навсозии навсозии аломатро фаъол созед."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Навсозии автоматии аломатро фаъол созед"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Хатогӣ ҳангоми боркунии каналҳо"
 
 msgid "Exit"
-msgstr ""
+msgstr "Баромадгоҳ"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Танзимоти филм"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Ба ҳадди аксар кӯшиши пайвастшавӣ расид"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Ягон канал ёфт нашуд"
 
 msgid "OK"
-msgstr ""
+msgstr "ДУРУСТ"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Бозӣ/таваффақ барои ин ҷараён дастгирӣ намешавад"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Сифати ҷараёнро интихоб кунед"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Хатогии сессия, дертар такрор кунед ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Плеери навсозии Timer Refresh -ро насб кунед."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Фосилаи навсозии аломат (сонияҳо)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Баъдтар бори дигар кӯшиш кунед..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "ХУШ ОМАДЕД БА ПЛАГИНИ FILMON АЗ ЛУЛУЛЛО"

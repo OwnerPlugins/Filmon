@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "బఫరింగ్..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "రద్దు చేయి"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "సమూహం ID కనుగొనబడలేదు"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "స్ట్రీమ్ URLని రీజెనరేట్ చేయడం సాధ్యపడదు"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "స్ట్రీమ్ కనెక్షన్‌ని పునరుద్ధరించడం సాధ్యం కాదు"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "స్ట్రీమ్ టోకెన్ పొందడం సాధ్యపడలేదు"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "ప్లేయర్‌లో టోకెన్ అప్‌డేట్ రిఫ్రెష్‌ని ప్రారంభించండి."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "టోకెన్ ఆటో-రిఫ్రెష్‌ని ప్రారంభించండి"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "ఛానెల్‌లను లోడ్ చేయడంలో లోపం"
 
 msgid "Exit"
-msgstr ""
+msgstr "నిష్క్రమించు"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filmon సెట్టింగ్‌లు"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "గరిష్ట రీకనెక్షన్ ప్రయత్నాలు చేరుకున్నాయి"
 
 msgid "No channels found"
-msgstr ""
+msgstr "ఛానెల్‌లు ఏవీ కనుగొనబడలేదు"
 
 msgid "OK"
-msgstr ""
+msgstr "సరే"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "ఈ స్ట్రీమ్‌కు ప్లే/పాజ్ మద్దతు లేదు"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "స్ట్రీమ్ నాణ్యతను ఎంచుకోండి"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "సెషన్ లోపం, తర్వాత మళ్లీ ప్రయత్నించండి..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "టైమర్ రిఫ్రెష్ అప్‌డేట్ ప్లేయర్‌ని సెట్ చేయండి."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "టోకెన్ రిఫ్రెష్ విరామం (సెకన్లు)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "తర్వాత మళ్లీ ప్రయత్నించండి..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "లులుల్లా ద్వారా ఫిల్మ్ ప్లగ్ఇన్‌కి స్వాగతం"

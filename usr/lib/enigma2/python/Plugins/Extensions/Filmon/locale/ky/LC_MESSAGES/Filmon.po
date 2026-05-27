@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Буферлөө..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Жокко чыгаруу"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Топ ID табылбай жатат"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Агымдын URL дарегин калыбына келтирүүгө болбойт"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Агым байланышын калыбына келтирүү мүмкүн эмес"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Агым токени алынган жок"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Оюнчуда Токенди жаңыртууну иштетүү."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Токенди автоматтык түрдө жаңылоону иштетүү"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Каналдарды жүктөө катасы"
 
 msgid "Exit"
-msgstr ""
+msgstr "Чыгыңыз"
 
 msgid "Filmon Settings"
 msgstr ""
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Кайра туташуу аракетинин максималдуу санына жетти"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Каналдар табылган жок"
 
 msgid "OK"
-msgstr ""
+msgstr "макул"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Бул агым үчүн ойнотуу/тындыруу колдоого алынбайт"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Агым сапатын тандаңыз"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Сеанс катасы, бир аздан кийин кайталап көрүңүз..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Таймерди жаңыртуу ойноткучту орнотуңуз."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Токенди жаңылоо аралыгы (секунд)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Бир аздан кийин кайталап көрүңүз..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "LULULLA FILMON PLUGIN НА КОШ КЕЛИҢИЗ"

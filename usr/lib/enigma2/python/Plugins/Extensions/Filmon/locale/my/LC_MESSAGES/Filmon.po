@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "အရှိန်မြှင့်နေသည်..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "မလုပ်တော့"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "အဖွဲ့ ID ရှာမတွေ့ပါ။"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "တိုက်ရိုက်လွှင့် URL ကို ပြန်ထုတ်၍မရပါ။"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "တိုက်ရိုက်ချိတ်ဆက်မှုကို ပြန်လည်ရယူ၍မရပါ။"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "ထုတ်လွှင့်မှုတိုကင်ကို ရယူ၍မရပါ။"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Player တွင် Token အပ်ဒိတ်ပြန်လည်စတင်ခြင်းကို ဖွင့်ပါ။"
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "တိုကင်အော်တို-ပြန်လည်စတင်ခြင်းကို ဖွင့်ပါ။"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "ချန်နယ်များကို ဖွင့်ရာတွင် အမှားအယွင်းရှိသည်။"
 
 msgid "Exit"
-msgstr ""
+msgstr "ထွက်ပေါက်"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filmon ဆက်တင်များ"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "အမြင့်ဆုံး ပြန်လည်ချိတ်ဆက်ရန် ကြိုးပမ်းမှုများ ပြီးပါပြီ။"
 
 msgid "No channels found"
-msgstr ""
+msgstr "ချန်နယ်များ မတွေ့ပါ။"
 
 msgid "OK"
-msgstr ""
+msgstr "အိုကေ"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "ဤထုတ်လွှင့်မှုအတွက် ဖွင့်/ခေတ္တရပ်ခြင်းကို မပံ့ပိုးပါ။"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "တိုက်ရိုက်ထုတ်လွှင့်မှု အရည်အသွေးကို ရွေးချယ်ပါ။"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "ဆက်ရှင် အမှားအယွင်း၊ နောက်မှ ထပ်ကြိုးစားပါ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Timer Refresh အပ်ဒိတ် Player ကို သတ်မှတ်ပါ။"
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "တိုကင်အား ပြန်လည်စတင်သည့်ကာလ (စက္ကန့်)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "နောက်မှ ထပ်ကြိုးစားပါ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "LULULLA မှ FILMON PLUGIN မှကြိုဆိုပါတယ်။"

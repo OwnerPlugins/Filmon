@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "بفرينګ..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "لغوه کړئ"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "د ګروپ ID نشي موندلی"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "د جریان URL بیا تولید نشي کولی"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "د جریان اتصال بحال نشي"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "د جریان نښه نشي ترلاسه کولی"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "په Player کې د ټوکن تازه تازه کول فعال کړئ."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "د ټوکن اتومات تازه کول فعال کړئ"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "د چینلونو په پورته کولو کې تېروتنه"
 
 msgid "Exit"
-msgstr ""
+msgstr "وتل"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "د فلمون تنظیمات"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "د بیا پیوستون اعظمي هڅې پای ته رسیدلي"
 
 msgid "No channels found"
-msgstr ""
+msgstr "هیڅ چینل ونه موندل شو"
 
 msgid "OK"
-msgstr ""
+msgstr "سمه ده"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "د دې جریان لپاره پلی/پاز ملاتړ نه کوي"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "د جریان کیفیت غوره کړئ"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "د ناستې تېروتنه، وروسته بیا هڅه وکړئ ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "د ټیمر ریفریش تازه پلیر تنظیم کړئ."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "د ټوکن تازه کولو وقفه (ثانوي)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "وروسته بیا هڅه وکړئ ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "د لولولا لخوا د فلمون پلګ ان ته ښه راغلاست"

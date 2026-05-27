@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Pufferelés..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Mégsem"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "A csoportazonosító nem található"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Az adatfolyam URL-címe nem generálható újra"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Nem lehet visszaállítani a streamkapcsolatot"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Nem sikerült lekérni a stream tokent"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "A Token Update frissítés engedélyezése a Playeren."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "A token automatikus frissítésének engedélyezése"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Hiba a csatornák betöltésekor"
 
 msgid "Exit"
-msgstr ""
+msgstr "Kijárat"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filmon beállítások"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Elérte az újracsatlakozási kísérletek maximális számát"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Nem található csatorna"
 
 msgid "OK"
-msgstr ""
+msgstr "RENDBEN"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "A lejátszás/szünet nem támogatott ennél az adatfolyamnál"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Válassza ki az adatfolyam minőségét"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Munkamenet hiba, próbálkozzon újra később..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Állítsa be az időzítőt, frissítse a lejátszót."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Token frissítési időköz (másodperc)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Próbáld újra később..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "ÜDVÖZÖLJÜK A LULULLA FILMON BEÉPÍTÉSÉBEN"

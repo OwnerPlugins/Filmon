@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "बफरिंग..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "रद्द करा"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "ग्रुप आयडी सापडत नाही"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "प्रवाह URL पुन्हा निर्माण करू शकत नाही"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "प्रवाह कनेक्शन पुनर्संचयित करू शकत नाही"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "प्रवाह टोकन मिळू शकले नाही"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Player वर टोकन अपडेट रिफ्रेश सक्षम करा."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "टोकन स्वयं-रीफ्रेश सक्षम करा"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "चॅनेल लोड करताना त्रुटी"
 
 msgid "Exit"
-msgstr ""
+msgstr "बाहेर पडा"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "फिल्मॉन सेटिंग्ज"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "कमाल रीकनेक्शन प्रयत्न झाले"
 
 msgid "No channels found"
-msgstr ""
+msgstr "कोणतेही चॅनेल आढळले नाहीत"
 
 msgid "OK"
-msgstr ""
+msgstr "ठीक आहे"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "या प्रवाहासाठी प्ले/पॉज समर्थित नाही"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "प्रवाह गुणवत्ता निवडा"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "सत्र त्रुटी, नंतर पुन्हा प्रयत्न करा..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "टाइमर रिफ्रेश अपडेट प्लेअर सेट करा."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "टोकन रिफ्रेश मध्यांतर (सेकंद)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "नंतर पुन्हा प्रयत्न करा..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "लुलुल्लाच्या फिल्मन प्लगइनमध्ये आपले स्वागत आहे"

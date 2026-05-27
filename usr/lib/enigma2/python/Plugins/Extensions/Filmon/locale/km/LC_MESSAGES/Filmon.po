@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "កំពុងផ្ទុក..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "បោះបង់"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "មិនអាចស្វែងរកលេខសម្គាល់ក្រុមបានទេ។"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "មិនអាចបង្កើត URL ស្ទ្រីមឡើងវិញបានទេ។"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "មិនអាចស្តារការតភ្ជាប់ស្ទ្រីមបានទេ។"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "មិន​អាច​ទទួល​សញ្ញា​សម្គាល់​ការ​ផ្សាយ"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "បើកដំណើរការអាប់ដេត Token Update នៅលើអ្នកលេង។"
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "បើកដំណើរការផ្ទុកឡើងវិញដោយស្វ័យប្រវត្តិនូវសញ្ញាសម្ងាត់"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "មាន​បញ្ហា​ក្នុង​ការ​ផ្ទុក​ឆានែល"
 
 msgid "Exit"
-msgstr ""
+msgstr "ចេញ"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "ការកំណត់ Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "ឈានដល់ការព្យាយាមភ្ជាប់ឡើងវិញជាអតិបរមា"
 
 msgid "No channels found"
-msgstr ""
+msgstr "រកមិនឃើញឆានែលទេ។"
 
 msgid "OK"
-msgstr ""
+msgstr "យល់ព្រម"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "មិនគាំទ្រការលេង/ផ្អាកសម្រាប់ការផ្សាយនេះទេ។"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "ជ្រើសរើសគុណភាពស្ទ្រីម"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "វគ្គមានបញ្ហា សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "កំណត់កម្មវិធីកំណត់ម៉ោង ធ្វើឱ្យទាន់សម័យអ្នកលេង។"
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "ចន្លោះពេលធ្វើឱ្យស្រស់សញ្ញាសម្ងាត់ (វិនាទី)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "ព្យាយាមម្តងទៀតពេលក្រោយ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "សូមស្វាគមន៍មកកាន់ FILMON PLUGIN ដោយ LULULLA"

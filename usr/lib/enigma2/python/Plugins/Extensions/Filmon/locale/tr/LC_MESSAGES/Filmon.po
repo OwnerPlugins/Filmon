@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Ara belleğe alınıyor..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "İptal etmek"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Grup kimliği bulunamıyor"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Akış URL'si yeniden oluşturulamıyor"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Akış bağlantısı geri yüklenemiyor"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Akış jetonu alınamadı"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Player'da Token Güncelleme yenilemesini etkinleştirin."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Belirteç otomatik yenilemesini etkinleştir"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Kanallar yüklenirken hata oluştu"
 
 msgid "Exit"
-msgstr ""
+msgstr "Çıkış"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filmon Ayarları"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Maksimum yeniden bağlanma denemesine ulaşıldı"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Hiçbir kanal bulunamadı"
 
 msgid "OK"
-msgstr ""
+msgstr "TAMAM"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Bu yayın için oynatma/duraklatma desteklenmiyor"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Akış kalitesini seçin"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Oturum hatası, daha sonra tekrar deneyin..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Zamanlayıcı Yenileme Güncelleme Oynatıcısını ayarlayın."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Jeton yenileme aralığı (saniye)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Daha sonra tekrar deneyin..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "LULULLA'NIN FILMON EKLENTİSİNE HOŞGELDİNİZ"

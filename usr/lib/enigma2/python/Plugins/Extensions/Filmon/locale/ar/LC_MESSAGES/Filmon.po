@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "جارٍ التخزين المؤقت..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "يلغي"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "لا يمكن العثور على معرف المجموعة"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "لا يمكن إعادة إنشاء عنوان URL للبث"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "لا يمكن استعادة اتصال الدفق"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "تعذر الحصول على رمز البث"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "تمكين تحديث الرمز المميز على المشغل."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "تمكين التحديث التلقائي للرمز المميز"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "حدث خطأ أثناء تحميل القنوات"
 
 msgid "Exit"
-msgstr ""
+msgstr "مخرج"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "إعدادات فيلمون"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "تم الوصول إلى الحد الأقصى لمحاولات إعادة الاتصال"
 
 msgid "No channels found"
-msgstr ""
+msgstr "لم يتم العثور على قنوات"
 
 msgid "OK"
-msgstr ""
+msgstr "نعم"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "التشغيل/الإيقاف المؤقت غير مدعوم لهذا الدفق"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "حدد جودة البث"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "حدث خطأ في الجلسة، حاول مرة أخرى لاحقًا..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "ضبط تحديث مؤقت للمشغل."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "الفاصل الزمني لتحديث الرمز المميز (بالثواني)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "حاول مرة أخرى لاحقا..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "مرحبًا بك في برنامج FILMON الإضافي من LULULLA"

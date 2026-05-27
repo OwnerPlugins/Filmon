@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "กำลังบัฟเฟอร์..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "ยกเลิก"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "ไม่พบรหัสกลุ่ม"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "ไม่สามารถสร้าง URL สตรีมใหม่ได้"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "ไม่สามารถคืนค่าการเชื่อมต่อสตรีมได้"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "ไม่สามารถรับโทเค็นสตรีมได้"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "เปิดใช้งานการรีเฟรช Token Update บน Player"
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "เปิดใช้งานการรีเฟรชโทเค็นอัตโนมัติ"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "เกิดข้อผิดพลาดในการโหลดช่อง"
 
 msgid "Exit"
-msgstr ""
+msgstr "ออก"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "การตั้งค่าฟิล์มออน"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "มีความพยายามในการเชื่อมต่อใหม่ถึงจำนวนสูงสุดแล้ว"
 
 msgid "No channels found"
-msgstr ""
+msgstr "ไม่พบช่อง"
 
 msgid "OK"
-msgstr ""
+msgstr "ตกลง"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "ไม่รองรับการเล่น/หยุดชั่วคราวสำหรับสตรีมนี้"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "เลือกคุณภาพการสตรีม"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "เซสชันเกิดข้อผิดพลาด โปรดลองอีกครั้งในภายหลัง ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "ตั้งเวลารีเฟรชผู้เล่นอัพเดต"
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "ช่วงเวลาการรีเฟรชโทเค็น (วินาที)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "ลองอีกครั้งในภายหลัง ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "ยินดีต้อนรับสู่ FILMON PLUGIN โดย LULULLA"

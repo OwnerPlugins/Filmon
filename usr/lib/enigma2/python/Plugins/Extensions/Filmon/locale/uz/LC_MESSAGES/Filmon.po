@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Buferlash..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Bekor qilish"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Guruh identifikatori topilmadi"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Oqim URL manzilini qayta tiklab bo‘lmadi"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Oqim ulanishini tiklab bo‘lmadi"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Translatsiya tokeni olinmadi"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Playerda token yangilanishini yangilashni yoqing."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Tokenni avtomatik yangilashni yoqing"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Kanallarni yuklashda xatolik yuz berdi"
 
 msgid "Exit"
-msgstr ""
+msgstr "Chiqish"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Film sozlamalari"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Maksimal qayta ulanishga urinishlar soniga erishildi"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Hech qanday kanal topilmadi"
 
 msgid "OK"
-msgstr ""
+msgstr "KELISHDIKMI"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Bu translatsiya uchun ijro etish/pauza qilish qo‘llab-quvvatlanmaydi"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Oqim sifatini tanlang"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Seans xatosi, keyinroq qayta urinib ko'ring..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Pleyerni yangilash taymerini o'rnating."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Tokenni yangilash oralig'i (sekundlar)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Keyinroq qayta urinib ko'ring..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "LULULLA FILMON PLAGINiga Xush kelibsiz"

@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Wrthi'n byffro..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Canslo"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Methu dod o hyd i ID grŵp"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Methu ag adfywio URL y ffrwd"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Methu adfer cysylltiad ffrwd"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Methu cael tocyn ffrwd"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Galluogi adnewyddiad Token Update ar Player."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Galluogi awto-adnewyddu tocyn"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Gwall wrth lwytho sianeli"
 
 msgid "Exit"
-msgstr ""
+msgstr "Ymadael"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Gosodiadau Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Cyrhaeddwyd uchafswm yr ymdrechion ailgysylltu"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Heb ganfod sianeli"
 
 msgid "OK"
-msgstr ""
+msgstr "iawn"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Ni chefnogir chwarae/saib ar gyfer y ffrwd hon"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Dewiswch ansawdd y ffrwd"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Gwall sesiwn, ceisiwch eto yn nes ymlaen ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Gosod Chwaraewr diweddariad Amserydd Adnewyddu."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Cyfnod adnewyddu tocyn (eiliadau)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Ceisiwch eto yn nes ymlaen..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "CROESO I FILMON PLUGIN GAN LULULLA"

@@ -13,61 +13,61 @@ msgid "Buffering..."
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Sguir dheth"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Chan urrainn dhuinn ID a' chuantail a lorg"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Chan urrainn dhuinn URL an t-srutha ath-nuadhachadh"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Chan urrainn dhuinn ceangal srutha a thoirt air ais"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Cha b' urrainn dhuinn tòcan an t-srutha fhaighinn"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Dèan comas air ùrachadh Token Update air Player."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Dèan comas air fèin-ùrachadh tòcan"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Thachair mearachd le luchdachadh sianal"
 
 msgid "Exit"
-msgstr ""
+msgstr "Ar-a-mach"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Roghainnean Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Chaidh na h-oidhirpean ath-cheangail as àirde a ruighinn"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Cha deach sianalan a lorg"
 
 msgid "OK"
-msgstr ""
+msgstr "ceart gu leòr"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Chan eil taic ri cluich/stad airson an t-srutha seo"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Tagh càileachd an t-sruth"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Mearachd seisean, feuch ris a-rithist nas anmoiche ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Suidhich Timer Ùrnaigh an cluicheadair ùrachadh."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Ùine ath-nuadhachaidh tòcan (diogan)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Feuch ris a-rithist nas fhaide air adhart ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "FÀILTE GU FILMON PLUGIN LE LULULLA"

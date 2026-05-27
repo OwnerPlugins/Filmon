@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Đang đệm..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Hủy bỏ"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Không thể tìm thấy ID nhóm"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Không thể tạo lại URL luồng"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Không thể khôi phục kết nối luồng"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Không thể nhận được mã thông báo luồng"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Bật tính năng làm mới Cập nhật mã thông báo trên Trình phát."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Bật tính năng tự động làm mới mã thông báo"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Lỗi tải kênh"
 
 msgid "Exit"
-msgstr ""
+msgstr "Ra"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Cài đặt phim"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Đã đạt đến số lần kết nối lại tối đa"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Không tìm thấy kênh nào"
 
 msgid "OK"
-msgstr ""
+msgstr "ĐƯỢC RỒI"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Phát/tạm dừng không được hỗ trợ cho luồng này"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Chọn chất lượng luồng"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Lỗi phiên, hãy thử lại sau ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Đặt hẹn giờ Làm mới trình phát cập nhật."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Khoảng thời gian làm mới mã thông báo (giây)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Hãy thử lại sau..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "CHÀO MỪNG BẠN ĐẾN VỚI PLUGIN PHIM CỦA LULULLA"

@@ -13,61 +13,61 @@ msgid "Buffering..."
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Ikkanċella"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Ma tistax issib l-ID tal-grupp"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Ma tistax tirriġenera l-URL tan-nixxiegħa"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Ma tistax tirrestawra l-konnessjoni tan-nixxiegħa"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Ma setgħetx tikseb token tal-fluss"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Ippermetti l-aġġornament tal-Aġġornament tat-Token fuq il-Plejer."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Ippermetti l-aġġornament awtomatiku tat-token"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Żball fit-tagħbija tal-kanali"
 
 msgid "Exit"
-msgstr ""
+msgstr "Ħruġ"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Issettjar Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Intlaħaq il-massimu ta' tentattivi ta' konnessjoni"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Ma nstab l-ebda kanal"
 
 msgid "OK"
 msgstr ""
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Play/pawsa mhux appoġġjat għal dan il-fluss"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Agħżel il-kwalità tan-nixxiegħa"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Żball fis-sessjoni, ipprova aktar tard..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Issettja l-Aġġornament tat-Timer Aġġorna l-Plejer."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Intervall tal-aġġornament tat-token (sekondi)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Erġa' pprova aktar tard..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "MERĦBA FILMON PLUGIN MINN LULULLA"

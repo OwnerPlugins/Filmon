@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Ukladá sa do vyrovnávacej pamäte..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušiť"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Nepodarilo sa nájsť ID skupiny"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Webová adresa streamu sa nedá znova vygenerovať"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Nedá sa obnoviť pripojenie k streamu"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Nepodarilo sa získať token streamu"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Povoliť obnovenie aktualizácie tokenu v prehrávači."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Povoliť automatické obnovenie tokenu"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Chyba pri načítavaní kanálov"
 
 msgid "Exit"
-msgstr ""
+msgstr "VÝCHOD"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Nastavenia filmu"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Bol dosiahnutý maximálny počet pokusov o opätovné pripojenie"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Nenašli sa žiadne kanály"
 
 msgid "OK"
 msgstr ""
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Prehrávanie/pozastavenie pre tento stream nie je podporované"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Vyberte kvalitu streamu"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Chyba relácie, skúste to neskôr..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Nastaviť časovač Obnoviť aktualizáciu prehrávača."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Interval obnovenia tokenu (sekundy)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Skúste to neskôr..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "VITAJTE NA FILMON PLUGIN OD LULULLA"

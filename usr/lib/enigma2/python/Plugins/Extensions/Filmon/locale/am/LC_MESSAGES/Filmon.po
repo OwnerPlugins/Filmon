@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "በማቋት ላይ..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "ሰርዝ"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "የቡድን መታወቂያ ማግኘት አልተቻለም"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "የዥረት ዩአርኤልን እንደገና ማመንጨት አልተቻለም"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "የዥረት ግንኙነትን ወደነበረበት መመለስ አልተቻለም"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "የዥረት ማስመሰያ ማግኘት አልተቻለም"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "በተጫዋች ላይ ማስመሰያ ማደስን አንቃ።"
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "ማስመሰያ በራስ-አድስን አንቃ"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "ቻናሎችን መጫን ላይ ስህተት"
 
 msgid "Exit"
-msgstr ""
+msgstr "ውጣ"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "የፊልም ቅንጅቶች"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "ከፍተኛው የመልሶ ማገናኘት ሙከራዎች ደርሰዋል"
 
 msgid "No channels found"
-msgstr ""
+msgstr "ምንም ሰርጦች አልተገኙም።"
 
 msgid "OK"
-msgstr ""
+msgstr "እሺ"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "ለዚህ ዥረት መጫወት/አፍታ ማቆም አይደገፍም።"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "የዥረት ጥራት ይምረጡ"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "የክፍለ ጊዜው ስህተት፣ ቆይተው እንደገና ይሞክሩ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "የሰዓት ቆጣሪ እድሳት ማጫወቻን ያዘጋጁ።"
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "የማስመሰያ እድሳት ክፍተት (ሰከንዶች)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "ቆይተው እንደገና ይሞክሩ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "እንኳን በደህና መጡ ወደ የፊልም ፕላግ በሉሉላ"

@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Пуферирање..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Откажи"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Не може да се најде ID на групата"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Не може да се регенерира URL-адресата на преносот"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Не може да се врати врската со преносот"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Не може да се добие токенот за пренос"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Овозможете освежување за ажурирање на токен на Player."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Овозможи автоматско освежување на токен"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Грешка при вчитување на каналите"
 
 msgid "Exit"
-msgstr ""
+msgstr "Излезете"
 
 msgid "Filmon Settings"
 msgstr ""
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Достигнати се максимални обиди за повторно поврзување"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Не се пронајдени канали"
 
 msgid "OK"
-msgstr ""
+msgstr "Во ред"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Репродукција/паузирање не е поддржано за овој пренос"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Изберете квалитет на пренос"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Грешка во сесијата, обидете се повторно подоцна ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Поставете го плеерот за ажурирање на тајмер за освежување."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Интервал на освежување на токен (секунди)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Обидете се повторно подоцна ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "ДОБРЕДОЈДОВТЕ ВО ПРИЛОГ НА FILMON BY LULULLA"

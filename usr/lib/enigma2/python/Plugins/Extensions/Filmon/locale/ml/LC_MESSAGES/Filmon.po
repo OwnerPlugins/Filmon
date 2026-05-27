@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "ബഫർ ചെയ്യുന്നു..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "റദ്ദാക്കുക"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "ഗ്രൂപ്പ് ഐഡി കണ്ടെത്താനായില്ല"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "സ്ട്രീം URL പുനഃസൃഷ്ടിക്കാനാവില്ല"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "സ്ട്രീം കണക്ഷൻ പുനഃസ്ഥാപിക്കാൻ കഴിയില്ല"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "സ്ട്രീം ടോക്കൺ നേടാനായില്ല"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "പ്ലേയറിൽ ടോക്കൺ അപ്‌ഡേറ്റ് പുതുക്കൽ പ്രവർത്തനക്ഷമമാക്കുക."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "ടോക്കൺ യാന്ത്രിക പുതുക്കൽ പ്രവർത്തനക്ഷമമാക്കുക"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "ചാനലുകൾ ലോഡുചെയ്യുന്നതിൽ പിശക്"
 
 msgid "Exit"
-msgstr ""
+msgstr "പുറത്ത്"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "ഫിലിമോൺ ക്രമീകരണങ്ങൾ"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "പരമാവധി വീണ്ടും കണക്ഷൻ ശ്രമങ്ങൾ എത്തി"
 
 msgid "No channels found"
-msgstr ""
+msgstr "ചാനലുകളൊന്നും കണ്ടെത്തിയില്ല"
 
 msgid "OK"
-msgstr ""
+msgstr "ശരി"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "ഈ സ്ട്രീമിനായി പ്ലേ/താൽക്കാലികമായി നിർത്തൽ പിന്തുണയ്ക്കുന്നില്ല"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "സ്ട്രീം ഗുണനിലവാരം തിരഞ്ഞെടുക്കുക"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "സെഷൻ പിശക്, പിന്നീട് വീണ്ടും ശ്രമിക്കുക..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "ടൈമർ റിഫ്രഷ് അപ്ഡേറ്റ് പ്ലെയർ സജ്ജമാക്കുക."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "ടോക്കൺ പുതുക്കൽ ഇടവേള (സെക്കൻഡ്)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "പിന്നീട് വീണ്ടും ശ്രമിക്കുക..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "ലുലുല്ലയുടെ ഫിലിം പ്ലഗിനിലേക്ക് സ്വാഗതം"

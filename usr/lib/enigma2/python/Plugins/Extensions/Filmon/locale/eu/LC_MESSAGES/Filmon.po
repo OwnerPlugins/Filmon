@@ -13,61 +13,61 @@ msgid "Buffering..."
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Utzi"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Ezin da aurkitu taldearen IDa"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Ezin da birsortu korrontearen URLa"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Ezin da korrontearen konexioa berrezarri"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Ezin izan da igorpen-tokena lortu"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Gaitu Token Eguneratze freskatzea Player-en."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Gaitu token-aren freskatze automatikoa"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Errore bat gertatu da kanalak kargatzean"
 
 msgid "Exit"
-msgstr ""
+msgstr "Irten"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filmon ezarpenak"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Gehienezko birkonektatzeko saiakera iritsi dira"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Ez da kanalik aurkitu"
 
 msgid "OK"
-msgstr ""
+msgstr "Ados"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Erreproduzitu/pausatu ezin da korronte honetan"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Hautatu korrontearen kalitatea"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Saioaren errorea, saiatu berriro geroago..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Ezarri tenporizadorea Freskatu eguneratzea erreproduzitzailea."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Token freskatzeko tartea (segundoak)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Saiatu berriro geroago..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "ONGI ETORRI LULULLAREN FILMON PLUGIN-era"

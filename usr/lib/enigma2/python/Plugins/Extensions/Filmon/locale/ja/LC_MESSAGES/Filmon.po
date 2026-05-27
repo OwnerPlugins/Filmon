@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "バッファリング中..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "キャンセル"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "グループIDが見つかりません"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "ストリーム URL を再生成できません"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "ストリーム接続を復元できません"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "ストリームトークンを取得できませんでした"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "プレーヤーでトークン更新の更新を有効にします。"
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "トークンの自動更新を有効にする"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "チャンネルのロード中にエラーが発生しました"
 
 msgid "Exit"
-msgstr ""
+msgstr "出口"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "フィルモンの設定"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "最大再接続試行回数に達しました"
 
 msgid "No channels found"
-msgstr ""
+msgstr "チャンネルが見つかりません"
 
 msgid "OK"
-msgstr ""
+msgstr "わかりました"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "このストリームでは再生/一時停止がサポートされていません"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "ストリーム品質を選択する"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "セッションエラー。後でもう一度試してください..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "タイマー更新を設定してプレーヤーを更新します。"
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "トークン更新間隔 (秒)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "後でもう一度試してください..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "Lulula の Filmon プラグインへようこそ"

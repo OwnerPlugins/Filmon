@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Se tamponează..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Anula"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Nu se poate găsi ID-ul grupului"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Nu se poate regenera adresa URL a fluxului"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Nu se poate restabili conexiunea la flux"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Nu s-a putut obține indicativul de flux"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Activați actualizarea Token Update pe Player."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Activați reîmprospătarea automată a simbolului"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Eroare la încărcarea canalelor"
 
 msgid "Exit"
-msgstr ""
+msgstr "Ieșire"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Setări Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Numărul maxim de încercări de reconectare a fost atins"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Nu s-au găsit canale"
 
 msgid "OK"
-msgstr ""
+msgstr "Bine"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Redarea/pauză nu este acceptată pentru acest flux"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Selectați calitatea fluxului"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Eroare de sesiune, încercați din nou mai târziu..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Setați Timer Refresh update Player."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Interval de reîmprospătare a simbolului (secunde)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Încercați din nou mai târziu..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "Bine ați venit la FILMON PLUGIN BY LULULLA"

@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Buffer..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Kansellere"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Kan ikke finne gruppe-ID"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Kan ikke gjenskape strømnettadressen"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Kan ikke gjenopprette strømtilkobling"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Kunne ikke hente strømtoken"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Aktiver oppdatering av tokenoppdatering på spilleren."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Aktiver token automatisk oppdatering"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Feil ved innlasting av kanaler"
 
 msgid "Exit"
-msgstr ""
+msgstr "Gå"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Innstillinger for film"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Maksimalt antall gjentilkoblingsforsøk er nådd"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Ingen kanaler funnet"
 
 msgid "OK"
 msgstr ""
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Spill av/pause støttes ikke for denne strømmen"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Velg strømkvalitet"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Øktfeil, prøv igjen senere ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Still inn Timer Refresh Update Player."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Tokenoppdateringsintervall (sekunder)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Prøv igjen senere..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "VELKOMMEN TIL FILMON PLUGIN AV LULULLA"

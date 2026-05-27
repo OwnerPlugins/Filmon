@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Mise en mémoire tampon..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Impossible de trouver l'ID du groupe"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Impossible de régénérer l'URL du flux"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Impossible de restaurer la connexion au flux"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Impossible d'obtenir le jeton de flux"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Activez l'actualisation de la mise à jour des jetons sur le lecteur."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Activer l'actualisation automatique du jeton"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Erreur lors du chargement des chaînes"
 
 msgid "Exit"
-msgstr ""
+msgstr "Sortie"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Paramètres de Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Nombre maximum de tentatives de reconnexion atteint"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Aucune chaîne trouvée"
 
 msgid "OK"
-msgstr ""
+msgstr "D'ACCORD"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Lecture/pause non prise en charge pour ce flux"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Sélectionnez la qualité du flux"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Erreur de session, réessayez plus tard..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Réglez le lecteur de mise à jour de l'actualisation de la minuterie."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Intervalle d'actualisation du jeton (secondes)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Réessayez plus tard..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "BIENVENUE SUR LE PLUGIN FILMON PAR LULULLA"

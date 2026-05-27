@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "חציצה..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "לְבַטֵל"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "לא ניתן למצוא מזהה קבוצה"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "לא ניתן ליצור מחדש את כתובת האתר של הזרם"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "לא ניתן לשחזר את חיבור הזרם"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "לא ניתן היה לקבל אסימון סטרימינג"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "אפשר רענון עדכון אסימון בנגן."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "אפשר רענון אוטומטי של אסימון"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "שגיאה בטעינת ערוצים"
 
 msgid "Exit"
-msgstr ""
+msgstr "יְצִיאָה"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "הגדרות Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "הגעתם לניסיונות חיבור מחדש מקסימליים"
 
 msgid "No channels found"
-msgstr ""
+msgstr "לא נמצאו ערוצים"
 
 msgid "OK"
-msgstr ""
+msgstr "בְּסֵדֶר"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "הפעלה/השהיה לא נתמכת עבור הזרם הזה"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "בחר איכות זרם"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "שגיאת הפעלה, נסה שוב מאוחר יותר..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "הגדר נגן עדכון טיימר רענון."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "מרווח רענון אסימון (שניות)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "נסה שוב מאוחר יותר..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "ברוכים הבאים ל-FILMON PLUGIN מאת LULULLA"

@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "באַפערן ..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "באָטל מאַכן"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "קען ניט געפֿינען גרופּע ID"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "קענען ניט רעגענערירן סטרימינג URL"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "קענען ניט ומקערן די סטרימינג קשר"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "קען נישט באַקומען סטרימינג טאָקען"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "געבן טאָקען דערהייַנטיקן דערפרישן אויף פּלייַער."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "געבן טאָקען אַוטאָ דערפרישן"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "טעות לאָודינג טשאַנאַלז"
 
 msgid "Exit"
-msgstr ""
+msgstr "אַרויסגאַנג"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "פילמאָן סעטטינגס"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "מאַקסימום ריקאַנעקשאַן פרווון ריטשט"
 
 msgid "No channels found"
-msgstr ""
+msgstr "קיין טשאַנאַלז געפונען"
 
 msgid "OK"
-msgstr ""
+msgstr "גוט"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "שפּיל / פּויזע ניט געשטיצט פֿאַר דעם טייַך"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "אויסקלייַבן טייַך קוואַליטעט"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "סעסיע טעות, פּרובירן ווידער שפּעטער ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "שטעלן טיימער רעפרעש דערהייַנטיקן פּלייַער."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "טאָקען דערפרישן מעהאַלעך (סעקונדן)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "פּרוּווט ווידער שפּעטער..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "ברוכים הבאים צו פילמאָן פּלוגין דורך LULULLA"

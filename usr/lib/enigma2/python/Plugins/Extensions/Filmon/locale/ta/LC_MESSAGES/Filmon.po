@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "இடையக..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "ரத்து செய்"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "குழு ஐடியைக் கண்டுபிடிக்க முடியவில்லை"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "ஸ்ட்ரீம் URL ஐ மீண்டும் உருவாக்க முடியாது"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "ஸ்ட்ரீம் இணைப்பை மீட்டெடுக்க முடியவில்லை"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "ஸ்ட்ரீம் டோக்கனைப் பெற முடியவில்லை"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "பிளேயரில் டோக்கன் புதுப்பிப்பு புதுப்பிப்பை இயக்கவும்."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "டோக்கன் தானாக புதுப்பிப்பை இயக்கவும்"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "சேனல்களை ஏற்றுவதில் பிழை"
 
 msgid "Exit"
-msgstr ""
+msgstr "வெளியேறு"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filmon அமைப்புகள்"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "அதிகபட்ச மறு இணைப்பு முயற்சிகள் எட்டப்பட்டுள்ளன"
 
 msgid "No channels found"
-msgstr ""
+msgstr "சேனல்கள் எதுவும் இல்லை"
 
 msgid "OK"
-msgstr ""
+msgstr "சரி"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "இந்த ஸ்ட்ரீமில் ப்ளே/இடைநிறுத்தம் ஆதரிக்கப்படவில்லை"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "ஸ்ட்ரீம் தரத்தைத் தேர்ந்தெடுக்கவும்"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "அமர்வு பிழை, பிறகு முயலவும்..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "டைமர் புதுப்பிப்பு பிளேயரை அமைக்கவும்."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "டோக்கன் புதுப்பிப்பு இடைவெளி (வினாடிகள்)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "பிறகு முயலவும்..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "லுலுல்லாவின் ஃபிலிமோன் செருகுநிரலுக்கு வரவேற்கிறோம்"

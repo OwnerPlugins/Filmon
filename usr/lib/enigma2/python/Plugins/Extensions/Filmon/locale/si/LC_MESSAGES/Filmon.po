@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "බෆරින්..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "අවලංගු කරන්න"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "කණ්ඩායම් හැඳුනුම්පත සොයාගත නොහැක"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "ප්‍රවාහ URL නැවත උත්පාදනය කළ නොහැක"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "ප්‍රවාහ සම්බන්ධතාව ප්‍රතිසාධනය කළ නොහැක"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "ප්‍රවාහ ටෝකනය ලබා ගැනීමට නොහැකි විය"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Player හි ටෝකන් යාවත්කාලීන නැවුම් කිරීම සබල කරන්න."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "ටෝකන් ස්වයංක්‍රීය නැවුම් කිරීම සබල කරන්න"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "නාලිකා පූරණය කිරීමේ දෝෂයකි"
 
 msgid "Exit"
-msgstr ""
+msgstr "පිටවෙන්න"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filmon සැකසුම්"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "උපරිම නැවත සම්බන්ධ කිරීමේ උත්සාහයන් ළඟා විය"
 
 msgid "No channels found"
-msgstr ""
+msgstr "නාලිකා හමු නොවීය"
 
 msgid "OK"
-msgstr ""
+msgstr "හරි"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "මෙම ප්‍රවාහය සඳහා Play/pause සහාය නොදක්වයි"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "ප්‍රවාහයේ ගුණාත්මකභාවය තෝරන්න"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "සැසියේ දෝෂයක්, පසුව නැවත උත්සාහ කරන්න ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Timer Refresh update Player සකසන්න."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "ටෝකන නැවුම් කිරීමේ පරතරය (තත්පර)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "පසුව නැවත උත්සාහ කරන්න..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "LULULLA විසින් FILMON ප්ලගිනය වෙත සාදරයෙන් පිළිගනිමු"

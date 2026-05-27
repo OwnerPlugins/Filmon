@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "بفرنگ..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "منسوخ کریں۔"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "گروپ کی شناخت نہیں مل سکی"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "سلسلہ URL کو دوبارہ تخلیق نہیں کیا جا سکتا"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "سلسلہ کنکشن بحال نہیں ہو سکتا"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "سلسلہ ٹوکن حاصل نہیں ہو سکا"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "پلیئر پر ٹوکن اپ ڈیٹ ریفریش کو فعال کریں۔"
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "ٹوکن آٹو ریفریش کو فعال کریں۔"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "چینلز لوڈ کرنے میں خرابی۔"
 
 msgid "Exit"
-msgstr ""
+msgstr "باہر نکلیں۔"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "فلمون کی ترتیبات"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "دوبارہ کنکشن کی زیادہ سے زیادہ کوششیں ہو گئیں۔"
 
 msgid "No channels found"
-msgstr ""
+msgstr "کوئی چینل نہیں ملا"
 
 msgid "OK"
-msgstr ""
+msgstr "ٹھیک ہے"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "اس سلسلے کے لیے چلائیں/روکنا تعاون یافتہ نہیں ہے۔"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "سلسلہ کا معیار منتخب کریں۔"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "سیشن کی خرابی، بعد میں دوبارہ کوشش کریں..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "ٹائمر ریفریش اپ ڈیٹ پلیئر سیٹ کریں۔"
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "ٹوکن ریفریش وقفہ (سیکنڈ)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "بعد میں دوبارہ کوشش کریں..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "لولا کے فلمن پلگ ان میں خوش آمدید"

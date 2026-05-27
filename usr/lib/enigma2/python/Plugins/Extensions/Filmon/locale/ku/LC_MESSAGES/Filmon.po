@@ -13,61 +13,61 @@ msgid "Buffering..."
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Bişûndekirin"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Nasnameya komê nayê dîtin"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "URL-ya herikînê ji nû ve çênabe"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Nikare girêdana herikînê vegerîne"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Nîşana weşanê nehat bidestxistin"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Nûvekirina Nûvekirina Tokenê li ser Player çalak bike."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Nûvekirina otomatîkî ya token çalak bike"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Di barkirina kanalan de çewtî"
 
 msgid "Exit"
-msgstr ""
+msgstr "Derî"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Mîhengên Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Hewldanên ji nû ve girêdana herî zêde gihîştin"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Tu kanal nehat dîtin"
 
 msgid "OK"
 msgstr ""
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Ji bo vê weşanê lîstin/raweste nayê piştgirî kirin"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Kalîteya stream hilbijêre"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Çewtiya danişînê, paşê dîsa biceribîne…"
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Timer Refresh Player-a nûvekirinê saz bikin."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Navbera nûvekirina tokenê (çirk)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Dûv re dîsa biceribîne ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "BI LULULLA PÊŞXWÎNE BERSÎVÊN FILMON"

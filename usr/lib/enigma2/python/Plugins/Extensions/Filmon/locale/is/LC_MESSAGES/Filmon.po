@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Bjóða..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Hætta við"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Get ekki fundið hópauðkenni"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Ekki er hægt að endurskapa vefslóð straumsins"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Ekki er hægt að endurheimta straumtengingu"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Ekki tókst að ná í straumlykil"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Virkjaðu endurnýjun táknuppfærslu á spilara."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Virkja sjálfvirka endurnýjun tákns"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Villa við að hlaða rásum"
 
 msgid "Exit"
-msgstr ""
+msgstr "Hætta"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filmon Stillingar"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Hámarkstilraunum til endurtengingar náð"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Engar rásir fundust"
 
 msgid "OK"
-msgstr ""
+msgstr "Allt í lagi"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Spilun/hlé er ekki stutt fyrir þennan straum"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Veldu gæði straumsins"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Lotuvilla, reyndu aftur síðar..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Stilltu Timer Refresh Update Player."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Táknuppfærslubil (sekúndur)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Reyndu aftur seinna..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "VELKOMIN Í FILMON PLUGIN BY LULULLA"

@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Almacenamiento en búfer..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "No puedo encontrar el ID del grupo"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "No se puede regenerar la URL de la transmisión"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "No se puede restaurar la conexión de transmisión"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "No se pudo obtener el token de transmisión"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Habilite la actualización de token en el reproductor."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Habilitar la actualización automática del token"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Error al cargar canales"
 
 msgid "Exit"
-msgstr ""
+msgstr "Salida"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Configuración de Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Se alcanzó el máximo de intentos de reconexión"
 
 msgid "No channels found"
-msgstr ""
+msgstr "No se encontraron canales"
 
 msgid "OK"
-msgstr ""
+msgstr "DE ACUERDO"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Reproducir/pausar no es compatible con esta transmisión"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Seleccione la calidad de la transmisión"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Error de sesión, inténtalo de nuevo más tarde..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Configure el reproductor de actualización de actualización del temporizador."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Intervalo de actualización del token (segundos)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Vuelve a intentarlo más tarde..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "BIENVENIDO AL PLUGIN FILMON DE LULULLA"

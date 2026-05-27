@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "正在缓冲..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "找不到群组 ID"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "无法重新生成流 URL"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "无法恢复流连接"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "无法获取流令牌"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "在播放器上启用令牌更新刷新。"
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "启用令牌自动刷新"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "加载频道时出错"
 
 msgid "Exit"
-msgstr ""
+msgstr "出口"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "电影设置"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "已达到最大重新连接尝试次数"
 
 msgid "No channels found"
-msgstr ""
+msgstr "没有找到频道"
 
 msgid "OK"
-msgstr ""
+msgstr "好的"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "此流不支持播放/暂停"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "选择码流质量"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "会话错误，请稍后重试..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "设置计时器刷新更新播放器。"
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "令牌刷新间隔（秒）"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "稍后再试..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "欢迎使用 LULULLA 制作的 FILMON 插件"

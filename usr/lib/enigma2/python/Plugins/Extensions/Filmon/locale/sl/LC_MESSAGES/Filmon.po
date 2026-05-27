@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Medpomnjenje ..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Prekliči"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "ID-ja skupine ni mogoče najti"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "URL-ja toka ni mogoče ponovno ustvariti"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Pretočne povezave ni mogoče obnoviti"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Ni bilo mogoče dobiti žetona toka"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Omogoči osvežitev posodobitve žetona v predvajalniku."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Omogoči samodejno osveževanje žetona"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Napaka pri nalaganju kanalov"
 
 msgid "Exit"
-msgstr ""
+msgstr "Izhod"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Nastavitve Filmona"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Doseženo največje število poskusov ponovne povezave"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Ni kanalov"
 
 msgid "OK"
 msgstr ""
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Predvajanje/pavza ni podprto za ta tok"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Izberite kakovost pretakanja"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Napaka seje, poskusite znova pozneje ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Nastavi časovnik Osveži posodobi predvajalnik."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Interval osveževanja žetona (sekunde)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Poskusite znova pozneje ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "DOBRODOŠLI V VTIČNIKU FILMON OD LULULLE"

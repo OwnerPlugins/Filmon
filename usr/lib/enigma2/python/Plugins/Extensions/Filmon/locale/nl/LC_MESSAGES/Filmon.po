@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Bufferen..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Kan groeps-ID niet vinden"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Kan de stream-URL niet opnieuw genereren"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Kan de streamverbinding niet herstellen"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Kan de streamtoken niet ophalen"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Schakel het vernieuwen van de tokenupdate in op de speler."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Schakel automatisch vernieuwen van tokens in"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Fout bij het laden van kanalen"
 
 msgid "Exit"
-msgstr ""
+msgstr "Uitgang"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filmon-instellingen"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Maximaal aantal herverbindingspogingen bereikt"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Geen kanalen gevonden"
 
 msgid "OK"
 msgstr ""
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Afspelen/pauzeren wordt niet ondersteund voor deze stream"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Selecteer streamkwaliteit"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Sessiefout, probeer het later opnieuw..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Timer instellen Vernieuwen update Speler."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Tokenvernieuwingsinterval (seconden)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Probeer het later opnieuw..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "WELKOM BIJ FILMON PLUGIN VAN LULULLA"

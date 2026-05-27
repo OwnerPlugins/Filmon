@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Αποθήκευση…"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Ματαίωση"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Δεν είναι δυνατή η εύρεση του αναγνωριστικού ομάδας"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Δεν είναι δυνατή η αναγέννηση της διεύθυνσης URL ροής"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Δεν είναι δυνατή η επαναφορά της σύνδεσης ροής"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Δεν ήταν δυνατή η λήψη του διακριτικού ροής"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Ενεργοποιήστε την ανανέωση του Token Update στο Player."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Ενεργοποίηση αυτόματης ανανέωσης διακριτικού"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Σφάλμα κατά τη φόρτωση καναλιών"
 
 msgid "Exit"
-msgstr ""
+msgstr "Εξοδος"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Ρυθμίσεις Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Επιτεύχθηκαν οι μέγιστες προσπάθειες επανασύνδεσης"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Δεν βρέθηκαν κανάλια"
 
 msgid "OK"
-msgstr ""
+msgstr "ΕΝΤΑΞΕΙ"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Η αναπαραγωγή/παύση δεν υποστηρίζεται για αυτήν τη ροή"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Επιλέξτε ποιότητα ροής"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Σφάλμα συνεδρίας, δοκιμάστε ξανά αργότερα..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Ρύθμιση προγράμματος αναπαραγωγής ενημέρωσης ανανέωσης χρονοδιακόπτη."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Διάστημα ανανέωσης διακριτικού (δευτερόλεπτα)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Δοκιμάστε ξανά αργότερα..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "ΚΑΛΩΣ ΟΡΙΣΑΤΕ ΣΤΟ FILMON PLUGIN BY LULULLA"

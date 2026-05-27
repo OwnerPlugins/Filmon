@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Memòria..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel·la"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "No es pot trobar l'identificador del grup"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "No es pot regenerar l'URL del flux"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "No es pot restaurar la connexió de reproducció"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "No s'ha pogut obtenir el testimoni de reproducció"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Activa l'actualització de l'actualització de testimoni al reproductor."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Activa l'actualització automàtica del testimoni"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "S'ha produït un error en carregar els canals"
 
 msgid "Exit"
-msgstr ""
+msgstr "Sortida"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Configuració de Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "S'han assolit el màxim d'intents de reconnexió"
 
 msgid "No channels found"
-msgstr ""
+msgstr "No s'han trobat canals"
 
 msgid "OK"
-msgstr ""
+msgstr "D'acord"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "La reproducció/pausa no s'admet per a aquesta reproducció"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Seleccioneu la qualitat del flux"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Error de sessió, torna-ho a provar més tard..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Configura el reproductor d'actualització del temporitzador."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Interval d'actualització del testimoni (segons)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Torna-ho a provar més tard..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "BENVINGUTS A FILMON PLUGIN DE LULULLA"

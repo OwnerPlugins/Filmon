@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "버퍼링 중..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "취소"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "그룹 ID를 찾을 수 없습니다"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "스트림 URL을 다시 생성할 수 없습니다."
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "스트림 연결을 복원할 수 없습니다."
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "스트림 토큰을 가져올 수 없습니다."
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "플레이어에서 토큰 업데이트 새로 고침을 활성화합니다."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "토큰 자동 새로고침 활성화"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "채널을 로드하는 중에 오류가 발생했습니다."
 
 msgid "Exit"
-msgstr ""
+msgstr "출구"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "필몬 설정"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "최대 재연결 시도 횟수에 도달했습니다."
 
 msgid "No channels found"
-msgstr ""
+msgstr "채널을 찾을 수 없습니다"
 
 msgid "OK"
-msgstr ""
+msgstr "좋아요"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "이 스트림에서는 재생/일시중지가 지원되지 않습니다."
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "스트림 품질 선택"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "세션 오류가 발생했습니다. 나중에 다시 시도하세요..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "타이머 새로 고침 업데이트 플레이어를 설정합니다."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "토큰 새로 고침 간격(초)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "나중에 다시 시도해 보세요..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "LULULLA의 FILMON 플러그인에 오신 것을 환영합니다."

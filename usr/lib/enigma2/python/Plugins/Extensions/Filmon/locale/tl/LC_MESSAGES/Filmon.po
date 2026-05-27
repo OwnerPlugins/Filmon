@@ -13,61 +13,61 @@ msgid "Buffering..."
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Kanselahin"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Hindi mahanap ang group ID"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Hindi mabuo muli ang URL ng stream"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Hindi maibalik ang koneksyon sa stream"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Hindi makakuha ng token ng stream"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Paganahin ang pag-refresh ng Token Update sa Player."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Paganahin ang auto-refresh ng token"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Error sa paglo-load ng mga channel"
 
 msgid "Exit"
-msgstr ""
+msgstr "Lumabas"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Mga Setting ng Filmon"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Naabot ang maximum na mga pagtatangka sa muling pagkonekta"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Walang nakitang mga channel"
 
 msgid "OK"
 msgstr ""
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Hindi sinusuportahan ang pag-play/pause para sa stream na ito"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Piliin ang kalidad ng stream"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Error sa session, subukang muli sa ibang pagkakataon..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Itakda ang Timer Refresh update Player."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Ang pagitan ng pag-refresh ng token (segundo)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Subukan ulit mamaya..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "WELCOME SA FILMON PLUGIN NI LULULLA"

@@ -10,64 +10,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "ବଫରିଂ ..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "ବାତିଲ୍ କରନ୍ତୁ |"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "ଗୋଷ୍ଠୀ ID ଖୋଜିପାରୁ ନାହିଁ |"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "ଷ୍ଟ୍ରିମ୍ URL ପୁନ reg ନିର୍ମାଣ କରିପାରିବ ନାହିଁ |"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "ଷ୍ଟ୍ରିମ୍ ସଂଯୋଗକୁ ପୁନ restore ସ୍ଥାପନ କରିପାରିବ ନାହିଁ |"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "ଷ୍ଟ୍ରିମ୍ ଟୋକନ୍ ପାଇପାରିଲା ନାହିଁ |"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "ପ୍ଲେୟାରରେ ଟୋକେନ୍ ଅପଡେଟ୍ ସତେଜ ସକ୍ଷମ କରନ୍ତୁ |"
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "ଟୋକେନ୍ ଅଟୋ-ସତେଜ ସକ୍ଷମ କରନ୍ତୁ |"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "ଚ୍ୟାନେଲ ଲୋଡିଂରେ ତ୍ରୁଟି |"
 
 msgid "Exit"
-msgstr ""
+msgstr "ପ୍ରସ୍ଥାନ"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "ଚଳଚ୍ଚିତ୍ର ସେଟିଂସମୂହ |"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "ସର୍ବାଧିକ ପୁନ recon ସଂଯୋଗ ପ୍ରୟାସ ପହଞ୍ଚିଲା |"
 
 msgid "No channels found"
-msgstr ""
+msgstr "କ channels ଣସି ଚ୍ୟାନେଲ ମିଳିଲା ନାହିଁ |"
 
 msgid "OK"
-msgstr ""
+msgstr "ଠିକ ଅଛି |"
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "ଏହି ଷ୍ଟ୍ରିମ୍ ପାଇଁ ପ୍ଲେ / ବିରାମ ସମର୍ଥିତ ନୁହେଁ |"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "ଷ୍ଟ୍ରିମ୍ ଗୁଣ ଚୟନ କରନ୍ତୁ |"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "ଅଧିବେଶନ ତ୍ରୁଟି, ପରେ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "ଟାଇମର୍ ରିଫ୍ରେସ୍ ଅପଡେଟ୍ ପ୍ଲେୟାର୍ ସେଟ୍ କରନ୍ତୁ |"
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "ଟୋକେନ୍ ସତେଜ ବ୍ୟବଧାନ (ସେକେଣ୍ଡ୍)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "ପରେ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ ..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "ଲୁଲୁଲାଙ୍କ ଦ୍ୱାରା ଫିଲମନ୍ ପ୍ଲଗଇନ୍ କୁ ସ୍ୱାଗତ |"

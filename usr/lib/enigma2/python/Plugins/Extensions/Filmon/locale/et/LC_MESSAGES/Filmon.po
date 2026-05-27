@@ -11,64 +11,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Buffering..."
-msgstr ""
+msgstr "Puhverdamine..."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Tühista"
 
 msgid "Cannot find group ID"
-msgstr ""
+msgstr "Grupi ID-d ei leitud"
 
 msgid "Cannot regenerate stream URL"
-msgstr ""
+msgstr "Voo URL-i ei saa uuesti luua"
 
 msgid "Cannot restore stream connection"
-msgstr ""
+msgstr "Vooühendust ei saa taastada"
 
 msgid "Could not get stream token"
-msgstr ""
+msgstr "Voo tunnust ei saanud hankida"
 
 msgid "Enable Token Update refresh on Player."
-msgstr ""
+msgstr "Lubage Playeris Token Update'i värskendamine."
 
 msgid "Enable token auto-refresh"
-msgstr ""
+msgstr "Luba märgi automaatne värskendamine"
 
 msgid "Error loading channels"
-msgstr ""
+msgstr "Viga kanalite laadimisel"
 
 msgid "Exit"
-msgstr ""
+msgstr "Välju"
 
 msgid "Filmon Settings"
-msgstr ""
+msgstr "Filmoni sätted"
 
 msgid "Maximum reconnection attempts reached"
-msgstr ""
+msgstr "Taasühendamiskatsete maksimaalne arv on saavutatud"
 
 msgid "No channels found"
-msgstr ""
+msgstr "Ühtegi kanalit ei leitud"
 
 msgid "OK"
 msgstr ""
 
 msgid "Play/pause not supported for this stream"
-msgstr ""
+msgstr "Esitust/peatamist selle voo puhul ei toetata"
 
 msgid "Select stream quality"
-msgstr ""
+msgstr "Valige voo kvaliteet"
 
 msgid "Session error, try again later ..."
-msgstr ""
+msgstr "Seansi viga, proovige hiljem uuesti ..."
 
 msgid "Set Timer Refresh update Player."
-msgstr ""
+msgstr "Seadista Timer Refresh update Player."
 
 msgid "Token refresh interval (seconds)"
-msgstr ""
+msgstr "Žetooni värskendusintervall (sekundites)"
 
 msgid "Try again later ..."
-msgstr ""
+msgstr "Proovi hiljem uuesti..."
 
 msgid "WELCOME TO FILMON PLUGIN BY LULULLA"
-msgstr ""
+msgstr "TERE TULEMAST LULULLA FILMONI PIstikprogrammi"
