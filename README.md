@@ -1,14 +1,39 @@
 <h1 align="center">📺 Filmon (Albatros modded by Lululla)</h1>
 
-![Version](https://img.shields.io/badge/version-1.5-blue)
-[![Enigma2](https://img.shields.io/badge/Enigma2-Plugin-ff6600.svg)](https://www.enigma2.net)
-![Python](https://img.shields.io/badge/Python3-only-orange.svg)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Python package](https://github.com/Belfagor2005/Filmon/actions/workflows/pylint.yml/badge.svg)](https://github.com/Belfagor2005/Filmon/actions/workflows/pylint.yml)
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.5-blue" alt="Version">
 
-[![Visitors](https://komarev.com/ghpvc/?username=Belfagor2005&label=Repository%20Views&color=blueviolet)](https://github.com/Belfagor2005)
-[![Donate](https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge)](https://ko-fi.com/lululla)
-[![Donate](https://img.shields.io/badge/_-Donate-green.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge)](https://paypal.me/belfagor2005)
+  <a href="https://www.enigma2.net">
+    <img src="https://img.shields.io/badge/Enigma2-Plugin-ff6600.svg" alt="Enigma2">
+  </a>
+
+  <img src="https://img.shields.io/badge/Python3-only-orange.svg" alt="Python">
+
+  <a href="https://www.gnu.org/licenses/gpl-3.0.html">
+    <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License">
+  </a>
+
+  <a href="https://github.com/Belfagor2005/Filmon/actions/workflows/pylint.yml">
+    <img src="https://github.com/Belfagor2005/Filmon/actions/workflows/pylint.yml/badge.svg" alt="Python package">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Belfagor2005">
+    <img src="https://komarev.com/ghpvc/?username=Belfagor2005&label=Repository%20Views&color=blueviolet" alt="Visitors">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://ko-fi.com/lululla">
+    <img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Ko-fi">
+  </a>
+
+  <a href="https://paypal.me/belfagor2005">
+    <img src="https://img.shields.io/badge/_-Donate-green.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="PayPal">
+  </a>
+</p>
+
 
 <p align="center">
   <img src="https://github.com/Belfagor2005/Filmon/blob/main/usr/lib/enigma2/python/Plugins/Extensions/Filmon/plugin.png" height="120">
