@@ -1576,8 +1576,10 @@ class Playstream2(
                 if ".m3u8" in stream_url and self.preferred_quality in stream_url:
                     clean_url = stream_url.replace("\\", "")
                     print(
-                        f"[DEBUG] URL regenerated with quality {
-                            self.preferred_quality}: {clean_url}")
+                        "[DEBUG] URL regenerated with quality {}: {}".format(
+                            self.preferred_quality, clean_url
+                        )
+                    )
                     if not clean_url.startswith("http"):
                         clean_url = "http://" + clean_url
                     return clean_url
