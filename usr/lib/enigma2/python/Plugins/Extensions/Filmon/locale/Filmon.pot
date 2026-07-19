@@ -20,11 +20,6 @@
 
 
 
-
-
-
-
-
 msgid "Buffering..."
 msgstr ""
 

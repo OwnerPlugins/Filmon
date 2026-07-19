@@ -153,11 +153,11 @@ def isGstPlayerAvailable():
 screenwidth = getDesktop(0).size()
 screen_width = screenwidth.width()  # Save the screen width in a variable
 if screen_width == 2560:
-    skin_path = join(PLUGIN_PATH, 'skin/skin_pli/defaultListScreen_newuhd.xml')
+    skin_path = join(PLUGIN_PATH, 'skin/screen_wqhd.xml')
 elif screen_width == 1920:
-    skin_path = join(PLUGIN_PATH, 'skin/skin_pli/defaultListScreen_new.xml')
+    skin_path = join(PLUGIN_PATH, 'skin/screen_fhd.xml')
 else:
-    skin_path = join(PLUGIN_PATH, 'skin/skin_pli/defaultListScreen.xml')
+    skin_path = join(PLUGIN_PATH, 'skin/screen_hd.xml')
 
 skin_info = join(PLUGIN_PATH, 'skin/info/info.xml')
 

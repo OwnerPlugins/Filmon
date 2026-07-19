@@ -1,7 +1,7 @@
 #!/bin/bash
 
-version='2.5'
-changelog='\nTranslate with IA and porting to PY3'
+version='2.6'
+changelog='\nSome fix'
 
 TMPPATH=/tmp/Filmon-install
 FILEPATH=/tmp/Filmon-main.tar.gz

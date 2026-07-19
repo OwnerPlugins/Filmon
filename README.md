@@ -1,7 +1,7 @@
 <h1 align="center">📺 Filmon (Albatros modded by Lululla)</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.5-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-2.6-blue" alt="Version">
 
   <a href="https://www.enigma2.net">
     <img src="https://img.shields.io/badge/Enigma2-Plugin-ff6600.svg" alt="Enigma2">
